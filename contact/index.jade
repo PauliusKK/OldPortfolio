@@ -1,0 +1,105 @@
+doctype html
+html(lang='en-US')
+    head
+        title Contact | Paulius Kašiuba - Front-end Developer Lithuania
+
+        include ../metatags
+
+        // START of LINKS
+
+        // Main CSS file
+        link(rel="stylesheet", href="../styles/style-dist.css")
+
+        include ../mixins
+
+        // END of LINKS
+
+    body
+
+        header
+
+            // Header for medium and large screens
+            .container.personal-header.hidden-xs.hidden-sm
+                .row
+                    .col-md-12: a(href="/") Paulius Kašiuba
+
+            // Header (NAVIGATION) for extra small and small screens
+            .container.hidden-md.hidden-lg
+                nav.navbar.navbar-default
+
+                    // Collapse-able navigation header and 3 icon bars when resolution is small
+                    .navbar-header
+                        button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navigation-bar", aria-expanded="false")
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+
+                    // Navigation bar with links, collapses when it screen turns small.
+                    .collapse.navbar-collapse#navigation-bar
+                        ul.nav.navbar-nav
+                            li: a(href="../") Home
+                            li: a(href="../about-me/") About Me
+                            li: a(href="../portfolio/") Portfolio
+                            li.active: a(href="/") Contact
+
+                // Main text, only visible on small screens and below that.
+                p.main-text: a(href="/") Paulius Kašiuba
+
+
+        // Main section. Navigation and about me in the About me page is stored here.
+        section
+            .container
+                .row
+
+                    // Navigation line for medium and large screens
+                    .col-md-2.hidden-sm.hidden-xs.middle-navigation
+
+                        // Navigation links starts
+                        ul.nav.nav-pills.nav-stacked
+                            li: a(href="../") Home
+                            li: a(href="../about-me/") About Me
+                            li: a(href="../portfolio/") Portfolio
+                            li.current: a(href="/") Contact
+
+
+                    // About Me column
+                    .col-md-10.col-sm-12
+
+                        // Get in Touch!
+                        .col-md-7.col-sm-12
+                            h4 Get in Touch!
+
+                            // Form
+                            form.form-group#gform(method="POST", action="https://script.google.com/macros/s/AKfycbzE8LueJH_378tUKGeWsQMs_SHzn1sxu0LoD5m_fihJvC8hdVU/exec")
+
+                                label Name
+                                    span.required *
+                                input(name="name", type="text", aria-required="true", placeholder="Your Name")
+
+                                label E-mail
+                                    span.required *
+                                input(name="email", type="email", aria-required="true", placeholder="Your Email Address")
+
+                                label Message
+                                    span.required *
+                                textarea(name="message", rows="4", aria-required="true", placeholder="Message")
+
+                                button.submit(type="submit") Submit
+
+                            #thankyou_message(style="display: none;")
+                                h2 Thanks for contacting me! I check my email daily and will email you back as soon as I'm able!
+
+
+                        // Contact information
+                        .col-md-5.hidden-sm.hidden-xs
+                            h4 Contact Information
+
+                            ul.contact-list
+                                li Vilnius, Lithuania
+                                li: a(href="tel:+37067052501") (+370) 670 52501
+                                li: a(href="mailto:p.kasiuba@gmail.com") paulius@kasiuba.lt
+
+
+        include ../footer
+
+        script(type='text/javascript', src="../js/email-dist.js")

@@ -1,0 +1,224 @@
+.full-searchbox-row
+    background-color: white
+
+h1.logo
+    background-image: url(../images/header-logo.png)
+    background-repeat: no-repeat;
+    width: 100px
+    text-indent: -10000px
+    margin-top: 50px
+
+.search-input
+    padding-left: 4rem
+
+    .column
+        padding-left: 0
+        padding-right: 0
+        margin-top: 40px
+
+    .column:first-child
+        padding: 0 0.6rem
+
+        select
+            border: 1px solid $color-borders
+            color: $text-option
+            font-size: 15px
+            padding-left: 20px
+            height: 50px
+            background-image: url(../images/input-arrow-down.png)
+            background-repeat: no-repeat
+            background-position: 75% 50%
+            font-family: 'PT Sans', sans-serif
+
+            option
+                color: $text-option
+                font-size: 15px
+                font-family: 'PT Sans', sans-serif
+
+    .column:last-child
+
+        input
+            margin-left: -11px
+            border: 1px solid $color-borders
+            height: 50px
+            box-shadow: none
+
+        input::-webkit-input-placeholder
+            font-size: 15px
+            color: $text-input
+            font-family: 'Montserrat', sans-serif
+            font-style: italic
+
+        button.icon
+            border: 1px solid $color-borders
+            border-left: none
+            background: $color-icon-background
+            height: 50px
+            width: 50px
+            color: $color-dropdown
+            font-size: 15pt
+            float: right
+            margin-top: -66px
+
+
+
+.shopping-cart
+    margin-top: 40px
+    cursor: pointer
+
+    h4
+        color: $color-lightblue
+        text-transform: uppercase
+        font-weight: 500
+        font-size: 15px
+        margin-top: 5px
+        font-family: 'Montserrat', sans-serif
+
+    p
+        color: $text-shopping-info
+        font-size: 15px
+        margin-top: -10px
+        font-family: 'PT Sans', sans-serif
+
+.cart
+    width: 50px
+    height: 50px
+    background-color: $color-lightblue
+    border-radius: 100%
+    position: relative
+    margin-left: -15px
+
+    img
+        position: absolute
+        margin: auto
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+
+// Shopping items
+.shopping-info
+    width: 290px
+    position: relative
+    margin-top: 10px
+    z-index: 11
+    left: -260px
+    top: 8px
+    border-radius: 5px
+    border-top: 1px solid $color-borders
+    display: none
+    margin-left: 8px
+
+    ul.menu
+        position: absolute
+        background-color: white
+        width: 290px
+        z-index: 12
+        border: 1px solid $color-borders
+        border-top: none
+        border-bottom: none
+
+        li
+            border-bottom: 1px solid $color-borders
+            padding: 15px
+
+            img
+                float: left
+                margin-right: 12px
+
+            .item-name
+                padding-top: 7px
+                color: $text-menu-left
+                font-size: 15px
+                margin-bottom: -3px
+
+            .item-quantity
+                color: $text-ticket-description
+                font-size: 13px
+                font-weight: bold
+                font-family: "Open Sans", sans-serif
+                padding-right: 5px
+
+            .fi-x
+                font-size: 10px
+                color: $color-borders
+                padding-right: 5px
+
+            .price-currency
+                color: $text-currency
+                font-family: "Open Sans", sans-serif
+                font-size: 13px
+
+            .item-price
+                color: $text-menu-left
+                font-size: 13px
+                font-weight: bold
+                font-family: "Open Sans", sans-serif
+
+            .close
+                float: right
+                margin-top: -10px
+                font-size: 12px
+                padding: 1px 6px
+                border-radius: 100%
+                background-color: $text-image-hover
+                color: white
+
+            .close:hover,
+            .close:focus,
+            .close:active
+                background-color: $color-close-hover
+
+
+        li.checkout
+            padding: 15px
+
+            .subtotal
+                font-size: 15px
+                color: $text-ticket-description
+                padding-right: 8px
+
+            .price-currency
+                color: $text-currency
+                font-size: 18px
+
+            .item-price
+                color: $text-menu-left
+                font-size: 18px
+                font-weight: bold
+
+            .button
+                font-size: 11px
+                font-weight: bold
+                border-radius: 5px
+                float: right
+                padding: 10px 15px
+                background-color: $color-lightblue
+
+                &:active,
+                &:hover,
+                &:focus
+                    background-color: $color-checkout-hover
+
+
+.shopping-info:after, .shopping-info:before
+    bottom: 100%
+    left: 75%
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+
+.shopping-info:after
+    border-color: rgba(255, 255, 255, 0)
+    border-bottom-color: white
+    border-width: 10px
+    margin-left: -10px
+
+.shopping-info:before
+    border-color: rgba(220, 220, 220, 0)
+    border-bottom-color: $color-borders
+    border-width: 11px
+    margin-left: -11px

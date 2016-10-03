@@ -1,0 +1,127 @@
+.home
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../images/home.png')
+    background-repeat: no-repeat
+    background-size: cover
+
+    .header-mini-title
+        @media screen and (max-width: $small-screen - 1)
+            margin-top: 40px
+            font-size: 20px
+
+        @media screen and (min-width: $small-screen) and (max-width: $medium-screen - 1)
+            margin-top: 100px
+            font-size: 30px
+
+        @media screen and (min-width: $medium-screen) and (max-width: $large-screen - 1)
+            margin-top: 100px
+            font-size: 35px
+
+        margin-top: 195px
+        color: white
+        font-family: $font-droidserif
+        font-size: 40px
+        text-transform: capitalize
+        line-height: 1
+
+    .header-title
+        color: white
+        font-family: $font-montserrat
+        font-size: 75px
+        font-weight: bold
+        text-transform: uppercase
+        line-height: 1
+        margin-top: 40px
+
+        @media screen and (max-width: $small-screen - 1)
+            font-size: 40px
+            line-height: 130%
+
+        @media screen and (min-width: $small-screen) and (max-width: $medium-screen - 1)
+            font-size: 45px
+
+        @media screen and (min-width: $medium-screen) and (max-width: $large-screen - 1)
+            font-size: 60px
+
+
+    .yellowbg
+        margin-top: 55px
+        margin-bottom: $section-end + 95
+
+        @media screen and (max-width: $small-screen - 1)
+            margin-bottom: $section-end
+
+        @media screen and (min-width: $small-screen) and (max-width: $medium-screen - 1)
+            margin-bottom: $section-end
+
+        @media screen and (min-width: $medium-screen) and (max-width: $large-screen - 1)
+            margin-bottom: $section-end
+
+    nav
+        margin-top: 25px
+        border: none
+        background: none
+        box-shadow: none
+        text-shadow: none
+
+        ul.nav a
+            @media screen and (min-width: $small-screen) and (max-width: $medium-screen - 1)
+                font-size: 18px
+
+            @media screen and (min-width: $medium-screen) and (max-width: $large-screen - 1)
+                font-size: 16px
+
+            margin-top: 5px
+            text-shadow: none
+            font-family: $font-montserrat
+            font-weight: normal
+            font-size: 14px
+            color: white
+            text-transform: uppercase
+
+        ul.nav a:focus,
+        ul.nav a:hover,
+        ul.nav a:active
+            color: $navbar-text-color
+
+        .navbar-nav
+            float: right
+
+            @media screen and (max-width: $small-screen - 1)
+                float: left
+
+
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.open>a
+        background: none
+        color: white
+        text-shadow: none
+        box-shadow: none
+
+
+    .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>.active>a:hover,
+    .navbar-default .navbar-nav>.active>a:active
+        color: $navbar-text-color
+
+    .navbar-default .navbar-nav>.open>a:focus,
+    .navbar-default .navbar-nav>.open>a:hover,
+    .navbar-default .navbar-nav>.open>a:active
+        color: $navbar-text-color
+
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:active
+        background-color: #ddd
+
+        .icon-bar
+            background-color: black
+
+.navbar-collapse
+    border-bottom: 1px solid transparent
+    @media screen and (max-width: $small-screen - 1)
+        box-shadow: none
+        border-top: none
+
+    @media screen and (min-width: $small-screen)
+        box-shadow: none
+        border: none

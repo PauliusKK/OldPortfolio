@@ -1,0 +1,75 @@
+// Styles for portfolio column.
+.col-md-5
+
+    .col-md-6
+        padding: 0 10px 0 0
+
+        // Square item tab, including photo of one of my completed projects
+        .item
+            float: left
+            width: 100%
+            margin-bottom: 10px
+            position: relative
+            height: 185px
+            overflow: hidden
+
+            a img
+                width: 100%
+                position: absolute
+                top: 0
+                right: 0
+
+            a img.sfg
+                height: 155%
+
+            a.hover
+                position: absolute
+                top: 0px
+                left: 0px
+                width: 100%
+                height: 100%
+                background-color: white
+                text-align: center
+                text-decoration: none
+                visibility: hidden
+                opacity: 0
+
+                // ANIMATION
+                -webkit-transition: all 300ms ease
+                -moz-transition: all 300ms ease
+                -ms-transition: all 300ms ease
+                -o-transition: all 300ms ease
+                transition: all 300ms ease
+
+                // Inside text, appears only when the image is hovered
+                h3
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    width: 100%
+                    transform: translate(-50%, -50%)
+                    margin: 0
+                    font-size: 14px
+                    color: black
+                    font-weight: 600
+                    letter-spacing: -2px
+                    text-transform: uppercase
+                    display: inline-block
+                    opacity: 0
+                    font-family: 'Raleway', sans-serif
+
+                    // ANIMATION
+                    -webkit-transition: opacity 200ms ease, letter-spacing 200ms ease
+                    -moz-transition: opacity 200ms ease, letter-spacing 200ms ease
+                    -ms-transition: opacity 200ms ease, letter-spacing 200ms ease
+                    -o-transition: opacity 200ms ease, letter-spacing 200ms ease
+                    transition: opacity 200ms ease, letter-spacing 200ms ease
+
+        // Item hover effect styles
+        .item:hover .hover, .hover:hover
+            visibility: visible
+            opacity: 0.95
+
+        .item:hover .hover > h3
+            letter-spacing: 0.9px
+            opacity: 1

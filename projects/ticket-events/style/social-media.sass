@@ -1,0 +1,82 @@
+.social-media-row
+    background-color: white
+
+// Social media DIV
+.social-media
+    border: 1px solid $color-borders
+    position: relative
+
+    img
+        position: absolute
+        bottom: 0
+        right: 0
+
+    h6
+        font-size: 15px
+        font-weight: bold
+        margin-top: 15px
+        margin-left: 20px
+        text-transform: uppercase
+
+    h5
+        font-size: 17px
+        color: $text-social-media-heading
+        margin-left: 20px
+
+    p
+        color: $text-ticket-description
+        font-size: 13px
+        padding-right: 90px
+        margin-left: 20px
+
+    .social-facebook
+        color: $social-facebook
+
+    .social-twitter
+        color: $social-twitter
+
+    .social-googleplus
+        color: $social-googleplus
+
+    .social-instagram
+        color: $social-instagram
+
+    // Social media button in the bottom
+    .social-media-button
+        background-color: $color-gray
+        color: $text-menu-left
+        border-radius: 5px
+        margin-left: 20px
+        font-size: 12px !important
+        text-transform: capitalize
+        margin-bottom: 28.641px
+        border: 1px solid $color-social-button-border
+        width: 95px
+        height: 30px
+        line-height: 8px
+        white-space: nowrap
+
+    .social-media-button:hover,
+    .social-media-button:focus,
+    .social-media-button:active
+        background-color: $color-social-button-hover
+        color: $text-social-hover
+
+// Full-row class and bottom white background before social media row
+.bottom-background
+    margin-top: -50px
+    position: absolute
+    top: 0
+    max-width: 100%
+    min-width: 100%
+    background-image: linear-gradient(#fff, #fff), linear-gradient(white, white)
+    background-clip: content-box, padding-box
+    height: 50px
+    z-index: -1
+
+.full-row
+    position: relative
+    padding-top: 25px
+    max-width: 100%
+    background-image: linear-gradient(#fff, #fff), linear-gradient(white, white)
+    background-clip: content-box, padding-box

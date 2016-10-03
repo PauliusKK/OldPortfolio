@@ -1,0 +1,160 @@
+.shop-row
+    border: 1px solid $color-borders
+    background-color: white
+
+    .column:first-child
+        .menu
+            margin: 25px
+
+            li:nth-child(n+2)
+                padding-left: 25px
+
+            li strong
+                font-size: 18px
+                color: $text-label
+                font-family: "Montserrat", sans-serif
+
+            li p
+                font-size: 15px
+                color: $text-shop-description
+                margin-bottom: 0
+                font-family: 'PT Sans', sans-serif
+
+            .vertical-line
+                height: 25px
+                width: 3px
+                padding: 0
+                text-indent: -10000px
+                background-color: $color-vertical-line
+
+
+        .progress
+            margin-left: 25px
+            margin-right: 25px
+            height: 0.075rem
+
+            .progress-meter
+                height: 100%
+
+    .inputs
+        margin-left: 25px
+        margin-right: 25px
+
+        .column
+            margin-bottom: 30px
+
+            label
+                color: $text-label
+                font-size: 15px
+
+                select
+                    margin-top: 5px
+
+
+            // Arrow down select
+            label.arrow-down-select
+                position: relative
+
+                select
+                    margin: 0
+                    line-height: 1.2
+                    background-color: white
+                    color: $text-header
+                    border: 1px solid $color-borders
+                    height: 50px
+                    max-width: 200px
+                    font-family: 'PT Sans', sans-serif
+                    font-size: 15px
+                    padding-left: 15px
+
+                    option
+                        color: $text-header
+                        font-size: 15px
+                        font-family: "PT Sans", sans-serif
+
+                &:after
+                    content: url(../images/input-arrow-down.png)
+                    position: absolute
+                    top: 1
+                    right: 0
+                    bottom: 0
+                    line-height: 48px
+                    border: 1px solid $color-borders
+                    padding: 0 20px
+                    background-color: white
+                    pointer-events: none
+
+
+
+            // Calendar select
+            label.calendar-select
+                position: relative
+
+                input
+                    margin: 0
+                    line-height: 1.2
+                    background-color: white
+                    color: $text-header
+                    border: 1px solid $color-borders
+                    height: 50px
+                    max-width: 200px
+                    font-family: 'PT Sans', sans-serif
+                    font-size: 15px
+                    padding-left: 15px
+                    -webkit-appearance: none
+                    -moz-appearance: none
+                    appearance: none
+
+                &:after
+                    content: url(../images/input-calendar.png)
+                    position: absolute
+                    top: 1
+                    right: 0
+                    bottom: 0
+                    line-height: 48px
+                    border: 1px solid $color-borders
+                    padding: 4px 15px
+                    height: 50px
+                    width: 50px
+                    background-color: white
+                    pointer-events: none
+
+
+
+            // Town Select
+            label.town-select
+                position: relative
+
+                select
+                    margin: 0
+                    line-height: 1.2
+                    background-color: white
+                    color: $text-header
+                    border: 1px solid $color-borders
+                    height: 50px
+                    max-width: 200px
+                    font-family: 'PT Sans', sans-serif
+                    font-size: 15px
+                    padding-left: 10px
+                    -webkit-appearance: none
+                    -moz-appearance: none
+                    appearance: none
+
+                    option
+                        color: $text-header
+                        font-size: 15px
+                        font-family: "PT Sans", sans-serif
+
+                &:after
+                    content: ""
+                    position: absolute
+                    top: 1
+                    right: 0
+                    bottom: 0
+                    line-height: 48px
+                    border: 1px solid $color-borders
+                    border-left: none
+                    height: 50px
+                    width: 20px
+                    background-color: white
+                    pointer-events: none

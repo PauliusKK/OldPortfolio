@@ -1,0 +1,62 @@
+.contact
+    background: $light-black
+    position: relative
+    background-image: url('../images/contact.png')
+    background-repeat: no-repeat
+    background-position: right bottom
+
+    .section-title
+        color: white
+
+    .section-description
+        color: $dark-grey
+
+        @media screen and (max-width: $small-screen - 1)
+            color: $dark-grey + 30
+
+    button
+        margin-top: 20px
+        margin-bottom: $section-end
+
+
+#Name::-webkit-input-placeholder,
+#Email::-webkit-input-placeholder,
+#Message::-webkit-input-placeholder,
+#Subject::-webkit-input-placeholder
+  color: $light-grey
+  font-family: $font-montserrat
+  font-size: 14px
+  font-weight: bold
+  text-transform: uppercase
+
+input[type=text],
+input[type=email]
+    height: 50px
+    margin-top: 15px
+
+    @media screen and (max-width: $small-screen - 1)
+        margin-top: 5px
+
+input[name=name]
+    margin-top: 0
+
+textarea.form-control
+    height: 210px
+
+
+input[type=text],
+input[type=email],
+input[name=name],
+textarea.form-control
+    color: $light-grey
+    font-size: 16px
+    font-family: $font-montserrat
+    font-weight: bold
+
+.mobile-only
+    @media screen and (min-width: $small-screen)
+        display: none
+
+.larger-than-mobile
+    @media screen and (max-width: $small-screen - 1)
+        display: none

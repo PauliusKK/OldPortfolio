@@ -1,0 +1,173 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title sfg.lt
+        link(ref="stylesheet", type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic")
+        link(ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
+        link(rel='stylesheet', href='style/style-dist.css')
+        //- include mixins
+
+body
+
+    header.home.container-fluid
+        .container
+            nav.navbar.navbar-default
+                .navbar-header
+                    button(type='button', class='navbar-toggle collapsed', data-toggle='collapse', data-target="#bs-example-navbar-collapse-1", aria-expanded="false")
+                        span(class='icon-bar')
+                        span(class='icon-bar')
+                        span(class='icon-bar')
+                    a(class='navbar-brand', href='#')
+                        img(alt='GoldenLOGO', src='images/logo.png')
+
+                .collapse.navbar-collapse#bs-example-navbar-collapse-1
+                    ul.nav.navbar-nav
+                        li.active
+                            a(href='#') PAGRINDINIS
+                        li
+                            a(href='#') FORUMAS
+                        li
+                            a(href='#') INFORMACIJA
+                        li
+                            a(href='#') PARDUOTUVĖ
+                        li
+                            a(href='#') KONTAKTAI
+
+
+    .col-md-12.hidden-xs
+
+        // Main image div
+        .container.main-image
+            h4 Sveiki atvykę į
+            h1 WWW.SFG.LT
+            h5 Vartotojo valdymo panelę
+
+            h6 Ką čia galima sužinoti?
+            p Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino<br> pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu<br> tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides<br> atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių. Šis tekstas išliko<br> beveik nepasikeitęs ne tik penkis amžius, bet ir įžengė i kopiuterinio grafinio
+
+
+    .col-md-12
+        .container.main-body
+
+            // Left side container
+            .col-lg-3.col-md-4.col-sm-5.col-xs-12.login
+                .heading
+                    h5 PRISIJUNGIMAS
+
+                .body
+                    form.form-horizontal
+                        .form-group
+                            label VARTOTOJO VARDAS
+                            .input-group
+                                .input-group-addon
+                                    img(src="images/login_username.png", alt="")
+                                input.form-control(type="text", placeholder="")
+
+                        .form-group
+                            label VARTOTOJO SLAPTAŽODIS
+                            .input-group
+                                .input-group-addon
+                                    img(src="images/login_password.png", alt="")
+                                input.form-control(type="text", placeholder="")
+
+                        .checkbox
+                            label
+                                input(type="checkbox")
+                                | PRISIMINTI
+
+                    p: a(href="") PAMIRŠAU SLAPTAŽODĮ
+
+                    p.buttonas: button(type='button', class='btn btn-default btn-lg') prisijungti
+
+                .heading
+                    h5 SERVERIO INFORMACIJA
+
+                .body-info
+                    ul.nav.nav-pills.nav-stacked
+                        li SERVERIO IP: <span>SAMP.LRGVLRG.LT</span>
+                        li PRISIJUNGĘ ŽAIDĖJAI: <span>27</span>
+                        li SERVERIO REKORDAS: <span>145</span>
+                        li PASKUTINIS ATNAUJINIMAS: <span>16/03/01</span>
+                        li ADMINISTRATORIŲ: <span>15</span>
+                        li VIP NARIŲ: <span>41</span>
+                        li UŽBANINTŲ ŽAIDĖJŲ: <span>154</span>
+                        li VEIKĖJŲ: <span>1145</span>
+
+                .copyright
+                    h5 VISOS TEISES SAUGOMOS
+                    h5.name SFG.LT
+                    h5 DIZAINAS: ZYON,
+                    h5 KODAS: PAULIUS K.
+
+
+
+            // Articles
+            .col-lg-9.col-md-8.col-sm-7.col-xs-12.articles
+
+                // First post
+                .post
+                    img.main(src="images/news_photo.png", alt="Description")
+                    h3 SERVERIO ATIDARYMAS JAU GREITAI
+
+                    // Horizontal information pills (calendar, user, comments)
+                    ul.nav.nav-pills
+                        li
+                            ul.nav.nav-pills
+                                li: img.icon(src="images/icon_calendar.png", alt="")
+                                li: p.pill-info Kovo 3, 2016
+                        li
+                            ul.nav.nav-pills
+                                li: img.icon(src="images/icon_torso.png", alt="")
+                                li: p.pill-info Vardas_Pavardenis
+                        li
+                            ul.nav.nav-pills.comments
+                                li: img.icon(src="images/icon_comment.png", alt="")
+                                li: p.pill-info 6 komentarai
+
+
+                    // Article
+                    p.article Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non cursus felis, nec pellentesque turpis. Phasellus sed aliquet justo. Nulla facilisi. Mauris ullamcorper euismod diam egestas faucibus. Donec non risus sagittis, eleifend sem eu, sollicitudin metus. Etiam hendrerit felis a nisi vulputate condimentum. Morbi tincidunt elementum sem, ac pellentesque massa blandit vel. Vestibulum ut justo fermentum, accumsan massa vel, tempor nunc. Etiam pretium justo at leo pretium iaculis. Cras turpis elit, volutpat ut velit vitae, commodo elementum ipsum. Donec commodo magna id quam porttitor pulvinar sed mollis quam.
+
+
+                    // Right side button
+                    button(type='button', class='btn btn-default btn-lg') SKAITYTI TOLIAU
+
+
+                // Second post
+                .post
+                    img.main(src="images/news_photo.png", alt="Description")
+                    h3 SERVERIO ATIDARYMAS JAU GREITAI
+
+                    // Horizontal information pills (calendar, user, comments)
+                    ul.nav.nav-pills
+                        li
+                            ul.nav.nav-pills
+                                li: img.icon(src="images/icon_calendar.png", alt="")
+                                li: p.pill-info Kovo 3, 2016
+                        li
+                            ul.nav.nav-pills
+                                li: img.icon(src="images/icon_torso.png", alt="")
+                                li: p.pill-info Vardas_Pavardenis
+                        li
+                            ul.nav.nav-pills
+                                li: img.icon(src="images/icon_comment.png", alt="")
+                                li: p.pill-info 6 komentarai
+
+
+                    // Article
+                    p.article Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non cursus felis, nec pellentesque turpis. Phasellus sed aliquet justo. Nulla facilisi. Mauris ullamcorper euismod diam egestas faucibus. Donec non risus sagittis, eleifend sem eu, sollicitudin metus. Etiam hendrerit felis a nisi vulputate condimentum. Morbi tincidunt elementum sem, ac pellentesque massa blandit vel. Vestibulum ut justo fermentum, accumsan massa vel, tempor nunc. Etiam pretium justo at leo pretium iaculis. Cras turpis elit, volutpat ut velit vitae, commodo elementum ipsum. Donec commodo magna id quam porttitor pulvinar sed mollis quam.
+
+
+                    // Right side button
+                    button(type='button', class='btn btn-default btn-lg') SKAITYTI TOLIAU
+
+
+
+
+    script(type='text/javascript', src='http://code.jquery.com/jquery-2.1.4.js')
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")

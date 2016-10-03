@@ -1,0 +1,100 @@
+.vertical-line
+    width: 2px
+    height: 93px
+    background: url(../images/line.png)
+    margin: 0 auto
+
+    @media only screen and (max-width: $small-screen - 1)
+        display: none
+
+.about-description
+    position: relative
+
+    img
+        border: 7px solid $almost-white
+        +border-radius(100%)
+
+
+.about-box
+    position: absolute
+    padding: 10px 0
+    top: -10px
+
+    @media only screen and (max-width: $small-screen - 1)
+        bottom: 0
+        left: 0
+        right: 0
+        top: 195px
+
+    h4
+        font-family: $font-montserrat
+        font-weight: bold
+        line-height: 85%
+
+        @media only screen and (max-width: $small-screen - 1)
+            text-align: center
+            line-height: 115%
+
+    p
+        font-family: $font-robotoslab
+        font-size: 14px
+        color: $dark-grey
+        font-weight: normal
+
+        @media only screen and (max-width: $small-screen - 1)
+            text-align: center
+
+
+    .about-us-date
+        text-transform: uppercase
+
+    .about-us-title
+        text-transform: capitalize
+        margin-bottom: 20px
+
+
+.about
+    .about-us:nth-child(even)
+        .about-description
+            .about-box
+                text-align: right
+                margin: 0 700px 0 100px
+
+                @media only screen and (max-width: $small-screen - 1)
+                    margin: 0
+
+                @media only screen and (min-width: $small-screen) and (max-width: $medium-screen - 1)
+                    margin: 0 465px 0 0
+
+                @media only screen and (min-width: $medium-screen) and (max-width: $large-screen - 1)
+                    margin: 0 625px 0 0
+
+
+    .about-us:nth-child(odd)
+        .about-description
+            .about-box
+                text-align: left
+                margin: 0 100px 0 700px
+
+                @media only screen and (max-width: $small-screen - 1)
+                    margin: 0
+
+                @media only screen and (min-width: $small-screen) and (max-width: $medium-screen - 1)
+                    margin: 0 0 0 465px
+
+                @media only screen and (min-width: $medium-screen) and (max-width: $large-screen - 1)
+                    margin: 0 0 0 625px
+
+
+    .about-us:nth-child(6)
+        margin-bottom: $section-end
+        .vertical-line
+            display: none
+
+    .about-us
+        @media only screen and (max-width: $small-screen - 1)
+            margin-top: 325px
+
+    .about-us:nth-child(2)
+        @media only screen and (max-width: $small-screen - 1)
+            margin: 0

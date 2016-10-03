@@ -1,0 +1,130 @@
+// Footer list including my information (telephone number, email address, credits)
+ul.footer-list, ul.contact-list
+    display: inline-block
+    position: relative
+    margin: 0
+    padding: 0
+    padding-top: 10px
+    list-style: none
+    color: $color-footer-text
+
+    li
+        padding: 3px 0
+        font-size: 12px
+        letter-spacing: 1px
+        font-family: 'Open Sans', sans-serif
+        position: relative
+
+        a
+            color: $color-footer-hover
+            position: relative
+            text-decoration: none
+
+            // ANIMATION
+            -webkit-transition: color 200ms ease
+            -moz-transition: color 200ms ease
+            -ms-transition: color 200ms ease
+            -o-transition: color 200ms ease
+            transition: color 200ms ease
+
+            &:hover
+                color: $color-footer-a-hover
+
+            &:after
+                width: 0%
+                margin-left: 100%
+                content: ' '
+                display: inline-block
+                border-bottom: 1px solid $color-footer-text-underline
+                position: absolute
+                left: -20%
+                bottom: 0 !important
+                opacity: 0
+
+                // ANIMATION
+                -webkit-transition: all 200ms ease
+                -moz-transition: all 200ms ease
+                -ms-transition: all 200ms ease
+                -o-transition: all 200ms ease
+                transition: all 200ms ease
+
+            &:hover:after
+                content: ' '
+                width: 100%
+                display: inline-block
+                border-bottom: 1px solid $color-footer-text-underline
+                position: absolute
+                left: 0%
+                margin-left: 0px
+                bottom: -4px
+                opacity: 1
+
+
+// Footer social media list (linkedin, facebook, github, googlePlus)
+footer .col-md-8
+    text-align: right
+
+    ul.social-list
+        list-style-type: none
+        padding: 0px
+        margin: 33px 0 0 0
+        font-size: 0
+        display: inline-block
+
+        &:hover li
+            opacity: 0.25
+
+            // ANIMATION
+            -webkit-transition: opacity 400ms ease
+            -moz-transition: opacity 400ms ease
+            -ms-transition: opacity 400ms ease
+            -o-transition: opacity 400ms ease
+            transition: opacity 400ms ease
+
+        li
+            display: inline-block
+            padding: 0 8px
+
+            &:hover
+                opacity: 1
+
+                // ANIMATION
+                -webkit-transition: opacity 400ms ease
+                -moz-transition: opacity 400ms ease
+                -ms-transition: opacity 400ms ease
+                -o-transition: opacity 400ms ease
+                transition: opacity 400ms ease
+
+            a
+                position: relative
+                text-align: center
+
+                .icon-linkedin
+                    background-image: url("../images/linkedin.png")
+                    background-size: 24px 24px
+
+                .icon-facebook
+                    background-image: url("../images/facebook.png")
+                    background-size: 24px 24px
+
+                .icon-github
+                    background-image: url("../images/github.png")
+                    background-size: 24px 24px
+
+                .icon-google-plus
+                    background-image: url("../images/google+.png")
+                    background-size: 24px 24px
+
+                i
+                    width: 24px
+                    height: 24px
+                    display: block
+
+// Global footer styles
+footer
+    margin-bottom: 20px
+    margin-top: 50px
+    text-align: left
+
+    .container .row
+        margin: 0 30px

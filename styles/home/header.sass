@@ -1,0 +1,128 @@
+// Header for small and smaller screens (navigation)
+header .container .navbar-default
+    background: none
+    border: none
+    margin-bottom: 0
+    padding: 40px 0
+
+    // Small navigation styles
+    .collapse
+        text-align: center
+
+        ul
+            padding: 0
+            margin: 4px 0
+            display: inline-block
+
+            li a
+                padding: 14px
+                display: block
+                font-size: 12px
+                color: $color-small-navigation-text
+                text-decoration: none
+                letter-spacing: 1px
+                text-transform: uppercase
+
+            li.active a
+                color: $color-small-navigation-current
+                background: none
+
+
+// Header for medium and large screens (main text, including Portfolio, my name, About me)
+header
+    .personal-header
+        margin-top: 42px
+        margin-bottom: 60px
+
+        .col-md-3 p
+            text-align: center
+            text-transform: uppercase
+            color: $color-personal-header-text
+            font-weight: 300
+            font-size: 30px
+            font-family: 'Open Sans', sans-serif
+            letter-spacing: -1.3px
+            padding-top: 20px
+
+        .col-md-6, .col-md-12
+            text-align: center
+
+            a
+                text-align: center
+                text-transform: uppercase
+                color: $color-header-main-text
+                font-weight: 800
+                font-size: 36px
+                letter-spacing: -2.3px
+                font-family: 'Raleway', sans-serif
+                padding-bottom: 12px
+                text-decoration: none
+
+                &:hover
+                    letter-spacing: -1.2px
+
+                // ANIMATION
+                -webkit-transition: letter-spacing 200ms ease
+                -moz-transition: letter-spacing 200ms ease
+                -ms-transition: letter-spacing 200ms ease
+                -o-transition: letter-spacing 200ms ease
+                transition: letter-spacing 200ms ease
+
+            &:after
+                position: absolute
+                bottom: -15px
+                width: 126%
+                left: -13%
+                height: 3px
+                display: block
+                content: ' '
+                background: transparent
+                background-image: -moz-radial-gradient(farthest-side at center top, #C0C0C0, rgba(255, 255, 255, 0))
+                background-image: -webkit-radial-gradient(farthest-side at center top, #C0C0C0, rgba(255, 255, 255, 0))
+                background-image: -o-radial-gradient(farthest-side at center top, #C0C0C0, rgba(255, 255, 255, 0))
+                background-image: -ms-radial-gradient(farthest-side at center top, #C0C0C0, rgba(255, 255, 255, 0))
+                background-image: radial-gradient(farthest-side at center top, #C0C0C0, rgba(255, 255, 255, 0))
+
+
+// Header for small and smaller screens, including my name, portfolio and about me information tabs.
+header .container h3.text-small
+        text-align: center
+        text-transform: uppercase
+        color: $color-personal-header-text
+        font-weight: 300
+        font-size: 30px
+        font-family: 'Open Sans', sans-serif
+        letter-spacing: -1.3px
+        padding-bottom: 20px
+
+header .container p.main-text
+    text-align: center
+
+    a
+        text-align: center
+        text-transform: uppercase
+        color: $color-header-main-text
+        font-weight: 800
+        font-size: 36px
+        letter-spacing: -2.3px
+        font-family: 'Raleway', sans-serif
+        padding-bottom: 12px
+        text-decoration: none
+
+        &:hover
+            letter-spacing: -1.2px
+
+        // ANIMATION
+        -webkit-transition: letter-spacing 200ms ease
+        -moz-transition: letter-spacing 200ms ease
+        -ms-transition: letter-spacing 200ms ease
+        -o-transition: letter-spacing 200ms ease
+        transition: letter-spacing 200ms ease
+
+// About me text for small and smaller screens.
+p.text-inside
+    font-size: 18px
+    text-align: center
+    font-weight: 300
+    font-family: 'Raleway', sans-serif
+    margin-bottom: 30px

@@ -1,0 +1,97 @@
+doctype html
+html(lang='en-US')
+    head
+        meta(name="google-site-verification", content="nUq6dhbWOfKlx6zHeevgW4f2IUJdWSFUKb5jyL5b4Bg")
+        title Home | Paulius Kašiuba - Front-end Developer Lithuania
+
+        include metatags
+
+        // START of LINKS
+
+        // Main CSS file
+        link(rel="stylesheet", href="styles/style-dist.css")
+
+        include mixins
+
+        // END of LINKS
+
+    body
+
+        header
+
+            // Header for medium and large screens
+            .container.personal-header.hidden-xs.hidden-sm
+                .row
+                    .col-md-3: p Portfolio
+                    .col-md-6: a(href="/") Paulius Kašiuba
+                    .col-md-3: p About Me
+
+            // Header (NAVIGATION) for extra small and small screens
+            .container.hidden-md.hidden-lg
+                nav.navbar.navbar-default
+
+                    // Collapse-able navigation header and 3 icon bars when resolution is small
+                    .navbar-header
+                        button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navigation-bar", aria-expanded="false")
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+
+                    // Navigation bar with links, collapses when it screen turns small.
+                    .collapse.navbar-collapse#navigation-bar
+                        ul.nav.navbar-nav
+                            li.active: a(href="/") Home
+                            li: a(href="about-me/") About Me
+                            li: a(href="portfolio/") Portfolio
+                            li: a(href="contact/") Contact
+
+                // Main text, only visible on small screens and below that.
+                p.main-text: a(href="/") Paulius Kašiuba
+
+                // Small text, which goes below the main text, visible only on small screens and below that.
+                h3.text-small About Me
+
+                p.text-inside I’m a freelance Front End Web Developer from Vilnius, Lithuania. I’m sure you just want to check out my work, so I’ll be quick. The work I provide is of high quality, fully responsive and tested in many browsers and devices. I ensure you that each project will be well-documentated and easily maintainable, so you’ll pretty much know what those blocks of code do.
+
+                p.text-inside If you want to read more about me <a href="http://kasiuba.lt/about-me/">click here</a>
+
+                // Small text, which goes below the About Me heading. Visible only on small screens and below that.
+                h3.text-small Portfolio
+
+
+        // Main section. Portfolio, navigation and about me in the front page is stored here.
+        section
+            .container
+                .row
+
+                    // Portfolio line
+                    .col-md-5.col-sm-12.col-xs-12
+
+                        +portfolioItem("ticketEvents","projects/ticket-events/", "images/ticket-events.png", "Ticket Events")
+
+                        +portfolioItem("cudaPortfolio","projects/cuda-portfolio/", "images/cuda-portfolio.png", "Cuda Portfolio")
+
+                        +portfolioItem("goldenPage","projects/golden-page/", "images/golden-page.png", "Golden Page")
+
+                        +portfolioItem("sfg","projects/sfg/", "images/sfg.png", "SFG")
+
+
+                    // Navigation line for medium and large screens
+                    .col-md-2.hidden-sm.hidden-xs.middle-navigation
+
+                        // Navigation links starts
+                        ul.nav.nav-pills.nav-stacked
+                            li.current: a(href="/") Home
+                            li: a(href="about-me/") About Me
+                            li: a(href="portfolio/") Portfolio
+                            li: a(href="contact/") Contact
+
+
+                    // About Me line
+                    .col-md-5.home-about-me
+                        p I’m a freelance Front End Web Developer from Vilnius, Lithuania. I’m sure you just want to check out my work, so I’ll be quick. The work I provide is of high quality, fully responsive and tested in many browsers and devices. I ensure you that each project will be well-documentated and easily maintainable, so you’ll pretty much know what those blocks of code do.
+
+                        p(style="margin-top: -15px") If you want to read more about me <a href="http://kasiuba.lt/about-me/">click here</a>
+
+
+        include footer

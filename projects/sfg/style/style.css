@@ -1,0 +1,353 @@
+.home, .navbar-default {
+  background-color: #3498db;
+  border: none;
+}
+
+.home {
+  box-shadow: 0px 5px 0px 0px #2980b9;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fffefe;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #8fcdf6;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: #3498db;
+  color: #fffefe;
+}
+
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:active {
+  color: #8fcdf6;
+  background-color: #3498db;
+}
+
+.main-image {
+  background-image: url(../images/main-image.png);
+  background-repeat: no-repeat;
+  margin-top: 5px;
+  background-size: 100% 100%;
+}
+
+.main-image h4, .main-image h1, .main-image h5, .main-image h6, .main-image p {
+  color: white;
+  margin-left: 80px;
+}
+
+.main-image h4 {
+  margin-top: 85px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.main-image h1 {
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-image h5 {
+  font-size: 18px;
+  margin-top: 5px;
+  font-weight: 300;
+}
+
+.main-image h6 {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.main-image p {
+  font-size: 11px;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+
+.login {
+  padding: 0;
+}
+
+.login .heading {
+  background-color: #353439;
+}
+
+.login .heading h5 {
+  color: #818285;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 45px;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.login .body {
+  background-color: #3b3a3f;
+}
+
+.login .body label {
+  color: #d1d2d4;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.login .body .input-group {
+  margin-left: 20px;
+  margin-right: 25px;
+}
+
+.login .body .checkbox {
+  padding-top: 0;
+}
+
+.login .body .checkbox label {
+  font-size: 12px;
+  margin-top: 0;
+  margin-left: 17px;
+}
+
+.login .body .checkbox label input {
+  margin-top: 1px;
+  margin-right: 0;
+  margin-left: -17px;
+}
+
+.login .body p {
+  margin-top: -6px;
+}
+
+.login .body p a {
+  color: #d1d2d4;
+  font-size: 12px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.login .body p.buttonas {
+  padding-bottom: 20px;
+  margin: 15px 15px 0 15px;
+}
+
+.login .body p.buttonas button {
+  color: #fffefe;
+  background-color: #3498db;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+}
+
+.login .body-info {
+  background-color: #3b3a3f;
+}
+
+.login .body-info ul {
+  padding-top: 20px;
+}
+
+.login .body-info ul li {
+  color: #d1d2d4;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding-bottom: 15px;
+}
+
+.login .body-info ul li span {
+  background-color: #4d4c50;
+  padding: 5px 15px;
+  border-radius: 25px;
+  margin-left: 10px;
+}
+
+.login .copyright {
+  background-color: #3498db;
+  border-radius: 3px;
+  margin: 10px 15px;
+}
+
+.login .copyright h5 {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.login .copyright h5.name {
+  color: #7dc7f7;
+}
+
+.login .copyright h5:first-child {
+  padding-top: 20px;
+}
+
+.login .copyright h5:last-child {
+  padding-bottom: 20px;
+}
+
+.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.input-group-addon:first-child {
+  background-color: #46484f;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.input-group .form-control {
+  background-color: #46484f;
+  border: none;
+  color: #717580;
+}
+
+.articles {
+  margin-bottom: 10px;
+}
+
+.articles .post img.main {
+  margin-top: 8px;
+  max-width: 850px;
+  padding-right: 8px;
+  width: 100%;
+}
+
+.articles .post h3 {
+  color: #343434;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.articles .post ul li {
+  padding-right: 10px;
+}
+
+.articles .post ul li ul li p.pill-info {
+  background-color: #95a5a6;
+  border-radius: 3px;
+  color: white;
+  padding: 3px 8px;
+  box-shadow: 0px 2px 0px 0px #7f8c8d;
+  font-size: 13px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.articles .post ul li ul li img.icon {
+  margin-top: 0px;
+}
+
+.articles .post p.article {
+  color: #606060;
+  font-size: 13px;
+  margin-top: 15px;
+  padding-right: 8px;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+
+.articles .post button {
+  float: right;
+  background-color: #3498db;
+  border-color: #2980b9;
+  border-radius: 3px;
+  padding: 10px 50px;
+  color: #fffefe;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 8px;
+  margin-top: -10px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .articles .post ul li ul li p.pill-info {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .articles .post ul li {
+    padding-right: 5px;
+  }
+  .articles {
+    padding: 0 0 0 10px;
+  }
+  .articles .post button {
+    padding: 5px 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .copyright {
+    display: none;
+  }
+  .articles {
+    padding: 0 0 0 8px;
+  }
+  .articles .post ul li {
+    padding-bottom: 5px;
+    margin: 0 auto;
+  }
+  .articles .post p.article {
+    margin-top: 5px;
+  }
+  .articles .post button {
+    padding: 5px 20px;
+    margin-top: 5px;
+    margin-right: 15px;
+  }
+  .navbar-default .navbar-toggle {
+    background-color: #ddd;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    float: left;
+  }
+}
+
+body {
+  background: #b7c8c9;
+  background: -moz-linear-gradient(top, #b7c8c9 0%, #7f8c8d 100%, #7f8c8d 100%, #7f8c8d 100%, #7f8c8d 100%, #7f8c8d 100%);
+  background: -webkit-linear-gradient(top, #b7c8c9 0%, #7f8c8d 100%, #7f8c8d 100%, #7f8c8d 100%, #7f8c8d 100%, #7f8c8d 100%);
+  background: linear-gradient(to bottom, #b7c8c9 0%, #7f8c8d 100%, #7f8c8d 100%, #7f8c8d 100%, #7f8c8d 100%, #7f8c8d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7c8c9', endColorstr='#7f8c8d',GradientType=0 );
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  padding: 0;
+}
+
+.main-body {
+  background-color: white;
+  margin-top: 10px;
+}

@@ -1,0 +1,86 @@
+doctype html
+html(lang='en-US')
+    head
+        title Portfolio | Paulius Kašiuba - Front-end Developer Lithuania
+
+        include ../metatags
+
+        // START of LINKS
+
+        // Main CSS file
+        link(rel="stylesheet", href="../styles/style-dist.css")
+
+        include ../mixins
+
+        // END of LINKS
+
+    body
+
+        header
+
+            // Header for medium and large screens
+            .container.personal-header.hidden-xs.hidden-sm
+                .row
+                    .col-md-12: a(href="/") Paulius Kašiuba
+
+            // Header (NAVIGATION) for extra small and small screens
+            .container.hidden-md.hidden-lg
+                nav.navbar.navbar-default
+
+                    // Collapse-able navigation header and 3 icon bars when resolution is small
+                    .navbar-header
+                        button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navigation-bar", aria-expanded="false")
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+
+                    // Navigation bar with links, collapses when it screen turns small.
+                    .collapse.navbar-collapse#navigation-bar
+                        ul.nav.navbar-nav
+                            li: a(href="../") Home
+                            li: a(href="../about-me/index.html") About Me
+                            li.active: a(href="/") Portfolio
+                            li: a(href="../contact/") Contact
+
+                // Main text, only visible on small screens and below that.
+                p.main-text: a(href="/") Paulius Kašiuba
+
+
+        // Main section. Navigation and about me in the About me page is stored here.
+        section
+            .container
+                .row
+
+                    // Navigation line for medium and large screens
+                    .col-md-2.hidden-sm.hidden-xs.middle-navigation.portfolio-middle-navigation
+
+                        // Navigation links starts
+                        ul.nav.nav-pills.nav-stacked
+                            li: a(href="../") Home
+                            li: a(href="../about-me/") About Me
+                            li.current: a(href="/") Portfolio
+                            li: a(href="../contact/") Contact
+
+
+                    // About Me column
+                    .col-md-10
+
+                        .filters
+                            button(data-filter="*") All
+                            button(data-filter=".flat") Flat
+                            button(data-filter=".notflat") Not Flat
+                            button(data-filter=".github") In GitHub
+                            button(data-filter=".animations") With Animations
+
+                        .portfolio-items
+
+                            +ItemInPortfolioPage("animations github notflat", "../projects/ticket-events/", "ticket-events", "../images/ticket-events.png", "Ticket Events")
+
+                            +ItemInPortfolioPage("flat github", "../projects/cuda-portfolio/", "cuda-portfolio", "../images/cuda-portfolio.png", "Cuda Portfolio")
+
+                            +ItemInPortfolioPage("github notflat", "../projects/golden-page/", "golden-page", "../images/golden-page.png", "Golden Page")
+
+                            +ItemInPortfolioPage("notflat", "../projects/sfg/", "sfg", "../images/sfg.png", "SFG")
+
+
+        include ../footer

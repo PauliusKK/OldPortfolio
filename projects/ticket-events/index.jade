@@ -1,0 +1,663 @@
+doctype html
+html(lang="en")
+    head
+        title Ticket Event
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+
+        // START of LINKS
+
+        // Normalize.css
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css")
+
+        // Foundation and Foundation-icons CSS files.
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css")
+
+        // glDatePicker default styles.
+        link(rel="stylesheet", href="https://cdn.rawgit.com/glad/glDatePicker/master/styles/glDatePicker.default.css")
+
+        // Montserrat, Open Sans fonts.
+        link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Montserrat:400,700")
+        link(rel="stylesheet", type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic")
+
+        // Main style sheet.
+        //link(rel="stylesheet", href="style/style-dist.css")
+        link(rel="stylesheet", href="https://cdn.rawgit.com/PauliusKK/ticket-events/master/style/style.min.css")
+
+        // END of LINKS
+
+        include mixins
+
+    body
+
+        header
+            .row
+
+                .title-bar(data-responsive-toggle="example-menu", data-hide-for="medium")
+                    button.menu-icon(type="button", data-toggle)
+                    .title-bar-title Navigation
+
+                .top-bar#example-menu
+                    .top-bar-left
+                        ul.dropdown.menu(data-dropdown-menu)
+                            li.menu-text.show-for-large: p Hello, <strong>USERNAME</strong>
+
+                    .top-bar-right.show-for-medium
+                        ul.menu
+
+                            // Location information
+                            li
+                                i.fi-marker
+                                button.dropdown.button Chicagoland & Northern IL
+
+                            // Account information
+                            li
+                                button.content.dropdown.button My Account
+                                    span.cog.octicon.octicon-gear
+                                    .menu
+                                        a(href='#') Settings
+                                            span.icon.fi-widget
+                                        a(href='#') Web Statistics
+                                            span.icon.fi-graph-pie
+                                        a(href='#') Edit Users
+                                            span.icon.fi-torsos-all
+                                        a(href='#') Donate
+                                            span.icon.fi-paypal
+
+                            // Shopping cart ONLY FOR SMALL SCREEN
+                            li.show-for-small-only
+                                i.fi-shopping-cart
+                                button.dropdown.button 3 Item(s) - $578.14
+
+                    .top-bar-right.show-for-small-only
+                        ul.menu.vertical
+
+                            // Location information
+                            li
+                                ul.menu
+                                    li: i.fi-marker
+                                    li: button.button Chicagoland & Northern IL
+
+                            // Account information
+                            li
+                                ul.menu
+                                    li: i.fi-torso
+                                    li: button.button My Account
+
+                            // Shopping cart
+                            li
+                                ul.menu
+                                    li: i.fi-shopping-cart
+                                    li: button.button 3 Item(s) - $578.14
+
+                            // Home
+                            li
+                                ul.menu
+                                  li: i.fi-info
+                                  li: button.button Home
+
+                            // Tickets
+                            li
+                                ul.menu
+                                   li: i.fi-ticket
+                                   li: button.button Tickets
+
+                            // Events
+                            li
+                                ul.menu
+                                   li: i.fi-clipboard-notes
+                                   li: button.button Events
+
+                            // Contact us
+                            li
+                                ul.menu
+                                    li: i.fi-telephone
+                                    li: button.button Contact Us
+
+
+
+        // Logo, Search, Shopping Cart
+        .full-searchbox-row
+
+            .row.searchbox
+
+                // Logo
+                .column.large-2.show-for-large
+                    h1.logo Ticket
+
+                // Search Input
+                .column.large-7.medium-9.search-input
+
+                    // Category select
+                    .column.large-4.medium-4.small-12
+                            select
+                                option(value="default-text") All Categories
+                                option(value="1") Option1
+                                option(value="2") Option2
+
+                    // Search form
+                    .column.large-8.medium-8.small-12
+                        input(type="text", placeholder="Enter Artist, Team, or Venue")
+                        button.icon: i.fi-magnifying-glass
+
+                // Shopping Cart
+                .column.large-3.medium-3.show-for-medium.shopping-cart
+                    .column.large-2.medium-4
+
+                        // Shopping Cart ICON
+                        .cart
+                            img(src="images/icon-shopping-cart.png", alt="Shopping Cart")
+
+                    // Shopping cart information
+                    .column.large-10.medium-8.shopping-text
+                        h4 Shopping Cart
+                        p 3 Item (s) - $578.14
+
+                        .shopping-info
+                            ul.menu.vertical
+                                li
+                                    img(src="http://placehold.it/54x54", alt="Item")
+                                    h6.item-name The Game Ticket
+                                    span.item-quantity 1
+                                    span.fi-x
+                                    span.price-currency $
+                                    span.item-price 54
+                                    span.fi-x.close
+
+                                li
+                                    img(src="http://placehold.it/54x54", alt="Item")
+                                    h6.item-name Dillon Francis
+                                    span.item-quantity 1
+                                    span.fi-x
+                                    span.price-currency $
+                                    span.item-price 54
+                                    span.fi-x.close
+
+                                li
+                                    img(src="http://placehold.it/54x54", alt="Item")
+                                    h6.item-name Miami vs Cleavlend
+                                    span.item-quantity 1
+                                    span.fi-x
+                                    span.price-currency $
+                                    span.item-price 54
+                                    span.fi-x.close
+
+                                li.checkout
+                                    span.subtotal Subtotal:
+                                    span.price-currency $
+                                    span.item-price 578.14
+                                    button.tiny.button CHECKOUT
+
+        // Navigation
+        .full-navigation-row
+
+            .row.navigation-row
+
+                .column.medium-12.show-for-medium.navigation
+                    ul.dropdown.menu.float-right(data-dropdown-menu)
+                        li.show-for-large: a.fi-list(href=""): strong Categories
+                        li: a(href="") Home
+                        li.has-submenu
+                            a(href="") Tickets
+                            ul.navigation-ul.submenu.menu.vertical(data-submenu)
+                                li.submenu-menu: a(href="") Item 1A
+                                li.submenu-menu: a(href="") Item 1A
+                                li.submenu-menu: a(href="") Item 1A
+                        li.has-submenu
+                            a(href="") Events
+                            ul.navigation-ul.submenu.menu.vertical(data-submenu)
+                                li.submenu-menu: a(href="") Item 1A
+                                li.submenu-menu: a(href="") Item 1A
+                                li.submenu-menu: a(href="") Item 1A
+                        li: a(href="") Special Offers
+                        li: a.contact-us(href="") Contact Us
+                        li.show-for-large: a.i-arrow-right(href="") Arrow Right
+                        li.show-for-large: a.i-social-facebook(href="") Facebook
+                        li.show-for-large: a.i-social-twitter(href="") Twitter
+                        li.show-for-large: a.i-social-googleplus(href="") GooglePlus
+                        li.show-for-large: a.i-social-linkedin(href="") LinkedIn
+
+
+        .row.left-categories.show-for-large
+
+            .column.large-12.show-for-large.main-pictures
+                ul.menu
+                    li
+                        ul.menu.vertical
+                            +left-categories-label("images/icon-music.png", "Music")
+                            +left-categories-label("images/icon-movies.png", "Movies")
+                            +left-categories-label("images/icon-sport.png", "Sport")
+                            +left-categories-label("images/icon-comedy.png", "Comedy")
+                            +left-categories-label("images/icon-family.png", "Family")
+                            +left-categories-label("images/icon-arts.png", "Arts")
+                            +left-categories-label("images/icon-theatre.png", "Theatre")
+                            +left-categories-label("images/icon-fashion.png", "Fashion")
+                            +left-categories-label("images/icon-food.png", "Food")
+
+                    li.main-image
+                        img(src="images/slider-1.jpg", alt="Dillon Francis")
+
+                        // Image information, going on the image
+                        .image-text-main
+                            h2 Dillon Francis
+                            h4 UNITED CENTER, CHICAGO, IL
+
+                            .rating
+                                i.fi-star
+                                i.fi-star
+                                i.fi-star
+                                i.fi-star
+                                i.fi-star.inactive
+                                a(href="") (53)
+
+                            p.image-a: a(href="") <br>Get It Now!
+
+                    li
+                        ul.menu.vertical
+                            li.main-image-2
+                                img(src="images/slider-2.jpg", alt="The Game")
+
+                                // Image information, going on the image
+                                .image-text-main-2
+                                    h3 The Game  Tour
+                                    h4 December 2015
+
+                                    .rating
+                                        i.fi-star
+                                        i.fi-star
+                                        i.fi-star
+                                        i.fi-star
+                                        i.fi-star.inactive
+                                        a(href="") (53)
+
+                                    p.image-a: a(href="") <br>Get It Now!
+
+                            li.main-image-3
+                                    img(src="images/slider-3.jpg", alt="Miami vs Cleavlend CL")
+
+                                    // Image information, going on the image
+                                    .image-text-main-3
+                                        h3 Miami vs Cleavlend CL
+                                        h4 Medison Square
+
+                                        .rating
+                                            i.fi-star
+                                            i.fi-star
+                                            i.fi-star
+                                            i.fi-star
+                                            i.fi-star.inactive
+                                            a(href="") (53)
+
+                                        p.image-a: a(href="") <br>Get It Now!
+
+
+
+        // SHOP FOR EVENTS
+        .row.shop-row
+
+            // Header text
+            .column.small-12
+                ul.menu
+                    li: strong Shop for Events
+                    li: a.vertical-line Line
+                    li: p Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+
+                // Progress Bar
+                .progress(role="progressbar", tabindex="0", aria-valuenow="10", aria-valuemin="0", aria-valuemax="100")
+                    .progress-meter(style="width: 10%")
+
+
+            .row.small-up-1.medium-up-3.large-up-5.inputs
+
+                // Select's START
+                .column
+                    label.arrow-down-select Select Category <br />
+                        select
+                            option Select
+                            option Option 1
+                            option Option 2
+
+                .column
+                    label.arrow-down-select Sub Category <br />
+                        select
+                            option Select
+                            option Option 1
+                            option Option 2
+
+                .column
+                    label.calendar-select From <br />
+                        input#calendar(type="text", value="")
+
+                .column
+                    label.calendar-select To <br />
+                        input#calendar2(type="text")
+
+                .column
+                    label.town-select Town <br />
+                        select
+                            option Chicagoland & Northern IL
+                            option Chicagoland & Northern IL
+                            option Chicagoland & Northern IL
+                // Select's END
+
+
+        // HOT TICKETS
+        .row.menu-navi
+
+            // Navigation
+            +menu("HOT TICKETS", "Family", "Sport", "Music", "Art", "Food")
+
+
+        // Tickets
+        .row.hot-tickets
+
+            +ticket-full-image("images/tickets-1.jpg", "Omar Linx")
+
+            +ticket-small-text("images/tickets-2.jpg", "Dirty South", "Presented by Blueprint", "DIRTY SOUTH : #STEREO", "text-new", "NEW!", "SEE TICKET")
+
+            +ticket-small-text("images/tickets-3.jpg", "PROBLEM", "Presented by BlueprintLIVE", "Problem", "text-hot", "HOT!", "SEE TICKET")
+
+            +ticket("images/tickets-4.jpg", "GRIZ", "Presented by Blueprint & Live Nation", "GRIZ :: SAY IT LOUD TOUR", "SEE TICKET")
+
+
+
+        // Sports menu row
+        .row.menu-navi
+
+            // Navigation
+            +menu("SPORTS", "All", "Basketball", "Tennis", "Rugby", "Formula 1")
+
+
+        // SPORTS ROW
+        .row.sports-row
+
+            // Close Button
+            .column.small-12.large-7.sports-labels
+                .primary.callout.event-label-button(data-closable)
+                    p Recommendet Sport Evenets past 5 Days
+                    button.close-button(aria-label="Dismiss alert" type="button" data-close)
+                        span(aria-hidden="true") &times;
+
+                // Events START
+
+                +sports-event-label("14", "April", "Neil Diamond World Tour 2015", "United Center", "SEE TICKET")
+
+                +sports-event-label("21", "April", "Chicago White Sox vs. Cleveland Indians", "U.S. Cellular Field", "SEE TICKET")
+
+                +sports-event-label("26", "April", "Chicago Bulls v. TBD - Round 1 Home Game D", "United Center", "SEE TICKET")
+
+                +sports-event-label("27", "April", "Bank of America Theatre", "U.S. Cellular Field", "SEE TICKET")
+
+                +sports-event-label("29", "April", "Shania Twain Rock This Country Tour", "Allstate Arena", "SEE TICKET")
+
+                +sports-event-label("30", "April", "One Direction: On The Road Again Tour 2015", "Soldier Field", "SEE TICKET")
+
+                // Events END
+
+
+                // Events for small screen START
+
+                +sports-event-label-for-small-screen("14", "April", "Neil Diamond World Tour 2015", "United Center", "SEE TICKET")
+
+                +sports-event-label-for-small-screen("21", "April", "Chicago White Sox vs. Cleveland Indians", "U.S. Cellular Field", "SEE TICKET")
+
+                +sports-event-label-for-small-screen("26", "April", "Chicago Bulls v. TBD - Round 1 Home Game D", "United Center", "SEE TICKET")
+
+                +sports-event-label-for-small-screen("27", "April", "Bank of America Theatre", "U.S. Cellular Field", "SEE TICKET")
+
+                +sports-event-label-for-small-screen("29", "April", "Shania Twain Rock This Country Tour", "Allstate Arena", "SEE TICKET")
+
+                +sports-event-label-for-small-screen("30", "April", "One Direction: On The Road Again Tour 2015", "Soldier Field", "SEE TICKET")
+
+                // Events for small screen END
+
+
+            // Right Side Images
+            .column.medium-12.large-5.sports-images.show-for-medium.event-images
+
+                .image-with-text
+                    img(src="images/tickets-5.jpg", alt="Rugby")
+                    +photo-information-left("L.A Lakers vs ", "Chicago Bulls!", "BMO Harris Bank Conter", "Get It Now!")
+
+                .image-with-text
+                    img(src="images/tickets-6.jpg", alt="Messi")
+                    +photo-information-right("Barcelona vs ", "Real Madrid Tickets", "Kamp Nou", "Get It Now!")
+
+
+        // Sports Events with Pictures
+        .row.small-up-1.medium-up-3.large-up-5.sport-events-row
+            +sports-event("images/sports-1.jpg", "Lakers", "BMO Harris Bank Center", "L.A LAKERS VS HEAT", "SEE TICKET")
+
+            +sports-event("images/sports-2.jpg", "Football", "Lisabon, Portugal", "Portugal vs Serbia EUR16", "SEE TICKET")
+
+            +sports-event-small-text("images/sports-3.jpg", "UEFA Finals", "Peoria Civic Center", "UEFA Finals", "text-hot", "HOT!", "SEE TICKET")
+
+            +sports-event-small-text("images/sports-4.jpg", "Ski Jumping", "U.S. Cellular Field", "2015 Ski Jumping", "text-new", "NEW!", "SEE TICKET")
+
+            +sports-event("images/sports-5.jpg", "Rugby Finals", "BMO Harris Bank Center", "Rugby Finals 2016", "SEE TICKET")
+
+
+        // RECOMMENDED FOR YOU
+        .row.menu-navi
+
+            // Navigation
+            .column.small-12.menu-navigation-one
+
+                // Left Side Text
+                ul.menu.float-left
+                    li: strong RECOMMENDED FOR YOU
+
+                // Right Side Menu
+                ul.menu.float-right
+                    li View All
+
+
+        .row.recommended-row.show-for-medium
+            // Events
+            ul.rec-ul
+
+                +recommended-event("images/banner-1.png", "Chicago Bulls", "Chicago Bulls")
+
+                +recommended-event("images/banner-2.png", "Chicago Backhawks", "Chicago Backhawks")
+
+                +recommended-event("images/banner-3.png", "Chicago Wolves", "Chicago Wolves")
+
+                +recommended-event("images/banner-4.png", "CONCACAF Gold Cup", "CONCACAF Gold Cup")
+
+                +recommended-event("images/banner-1.png", "Chicago Bulls", "Chicago Bulls")
+
+                +recommended-event("images/banner-2.png", "Chicago Bulls", "Chicago Backhawks")
+
+                +recommended-event("images/banner-1.png", "Chicago Bulls", "Chicago Bulls")
+
+                +recommended-event("images/banner-2.png", "Chicago Backhawks", "Chicago Backhawks")
+
+                +recommended-event("images/banner-3.png", "Chicago Wolves", "Chicago Wolves")
+
+
+        // Music navigation menu
+        .row.menu-navi
+
+            // Navigation
+            +menu("MUSIC", "Live", "Rock", "Transe", "Techno", "National")
+
+        // Music events
+        .row.music-events-row
+
+            // Events
+            +ticket-small-text("images/music-1.jpg", "Black Milk", "Presented by Blueprint", "Black Milk", "text-new", "NEW!", "SEE TICKET")
+
+            +ticket-small-text("images/music-2.jpg", "Ten Walls", "Presented by Fortune Sound", "Ten Walls (Live)", "text-hot", "HOT!", "SEE TICKET")
+
+            +ticket("images/music-3.jpg", "Monstercat", "Presented by Seasons, Monstercat", "MONSTERCAT SHOWCASE", "SEE TICKET")
+
+            +ticket-full-image("images/music-4.jpg", "Firebeatz")
+
+
+        .row.music-events-labels-row
+            // Left Side Images
+            .column.medium-12.large-5.sports-images-bottom.show-for-medium.event-images
+
+                .image-with-text
+                    img(src="images/music-5.jpg", alt="Hardwell")
+                    +photo-information-left("Hardwell TOP 10 DJ", "Tour 2015", "BMO Harris Bank Center", "Get It Now!")
+
+                .image-with-text
+                    img(src="images/music-6.jpg", alt="Feddle Le Grand Tour")
+                    +photo-information-right("Feddle Le Grand ", "Tour Vegas", "Belagio", "Get It Now!")
+
+
+            // Close Button
+            .column.small-12.large-7.sports-labels-bottom
+                .primary.callout.event-label-button(data-closable)
+                    p Recommendet Sport Evenets past 5 Days
+                    button.close-button(aria-label="Dismiss alert" type="button" data-close)
+                        span(aria-hidden="true") &times;
+
+                // Events START
+
+                +sports-event-label("14", "April", "Neil Diamond World Tour 2015", "United Center", "SEE TICKET")
+
+                +sports-event-label("21", "April", "Chicago White Sox vs. Cleveland Indians", "U.S. Cellular Field", "SEE TICKET")
+
+                +sports-event-label("26", "April", "Chicago Bulls v. TBD - Round 1 Home Game D", "United Center", "SEE TICKET")
+
+                +sports-event-label("27", "April", "Bank of America Theatre", "U.S. Cellular Field", "SEE TICKET")
+
+                +sports-event-label("29", "April", "Shania Twain Rock This Country Tour", "Allstate Arena", "SEE TICKET")
+
+                +sports-event-label("30", "April", "One Direction: On The Road Again Tour 2015", "Soldier Field", "SEE TICKET")
+
+                // Events END
+
+
+                // Events for small screen START
+
+                +sports-event-label-for-small-screen("14", "April", "Neil Diamond World Tour 2015", "United Center", "SEE TICKET")
+
+                +sports-event-label-for-small-screen("21", "April", "Chicago White Sox vs. Cleveland Indians", "U.S. Cellular Field", "SEE TICKET")
+
+                +sports-event-label-for-small-screen("26", "April", "Chicago Bulls v. TBD - Round 1 Home Game D", "United Center", "SEE TICKET")
+
+                +sports-event-label-for-small-screen("27", "April", "Bank of America Theatre", "U.S. Cellular Field", "SEE TICKET")
+
+                +sports-event-label-for-small-screen("29", "April", "Shania Twain Rock This Country Tour", "Allstate Arena", "SEE TICKET")
+
+                +sports-event-label-for-small-screen("30", "April", "One Direction: On The Road Again Tour 2015", "Soldier Field", "SEE TICKET")
+
+                // Events for small screen END
+
+
+        // Social Media
+        .full-row
+            .bottom-background
+
+            .row.social-media-row
+
+                +social-media("images/facebook.png", "Facebook", "social-facebook", "Facebook", "Follow us on facebook", "You would have to be half mad to dream me up", "Like Us")
+
+                +social-media("images/twitter.png", "Twitter", "social-twitter", "Twitter", "Follow us on twitter", "You would have to be half mad to dream me up", "Tweet Now")
+
+                +social-media("images/googleplus.png", "Google Plus", "social-googleplus", "GOOGLE +", "Follow us on google plus", "You would have to be half mad to dream me up", "Follow Us")
+
+                +social-media("images/instagram.png", "Instagram", "social-instagram", "Instragram", "Follow us on instagram", "You would have to be half mad to dream me up", "Follow Us")
+
+
+            // More Information under social-media
+            .row.information-tabs-row
+
+                +information-tab("ticket", "images/icon-ticket.png", "Ticket", "+15.000 Tickets", "Sports, Movies, etc.")
+
+                +information-tab("star", "images/icon-star.png", "Star", "More then 20 Categories", "Football, Rugby, Tennis")
+
+                +information-tab("shipping", "images/icon-shipping.png", "Shipping", "Free Shipping", "Free shipping on the world")
+
+                +information-tab("refund", "images/icon-pig.png", "Refund", "Refund in 2 days", "100% guarantee")
+
+
+
+            footer
+                .row
+
+                    // Logo and Free shipping information
+                    .column.large-2.medium-6.free-shipping
+                        img.footer-logo(src="images/footer-logo.png", alt="Logo")
+                        h5 Ticket Services
+
+                        ul.menu
+                            li
+                                img(src="images/icon-delivery.png", alt="Delivery")
+
+                            li
+                                h6 Free Shipping
+                                p On All U.S. Orders
+
+                    // Subscribe information FOR MEDIUM SCREEN
+                    .column.large-3.medium-6.subscribe.show-for-medium-only
+                        h6 Subscribe Today
+                        p and <span>save a 10%</span> on your next order
+
+                        .input-group
+                            input.input-group-field(type="text", placeholder="Enter E-Mail")
+                            .input-group-button
+                                img(src="images/icon-rightarrow.png", alt="Submit")
+
+                        p I don't think... " then you<br>shouldn't talk, said the Hatter.
+
+                    // Policies
+                    .column.large-2.large-offset-1.medium-4.policies
+                        ul.menu.vertical
+                            li: h5 Policies
+                            li: a(href="") Privacy Policy
+                            li: a(href="") Return Policy
+                            li: a(href="") Shipping Policy
+
+                    // Account information
+                    .column.large-2.medium-4.account
+                        ul.menu.vertical
+                            li: h5 Account
+                            li: a(href="") Login
+                            li: a(href="") Register
+                            li: a(href="") My Account
+                            li: a(href="") History
+                            li: a(href="") Wishlist
+
+                    // Website information and necessary buttons
+                    .column.large-2.medium-4.website-info
+                        ul.menu.vertical
+                            li: h5 Website
+                            li: a(href="") Home
+                            li: a(href="") Tickets
+                            li: a(href="") Events
+                            li: a(href="") Contact Us
+                            li: a(href="") Help
+
+                    // Subscribe information FOR LARGE SCREEN
+                    .column.large-3.show-for-large.subscribe
+                        h6 Subscribe Today
+                        p and <span>save a 10%</span> on your next order
+
+                        .input-group
+                            input.input-group-field(type="text", placeholder="Enter E-Mail")
+                            .input-group-button
+                                img(src="images/icon-rightarrow.png", alt="Submit")
+
+                        p I don't think... " then you<br>shouldn't talk, said the Hatter.
+
+                    .column.small-12
+                        p.footer-text &copy; 2016 TICKET SERVICE. All rights reserved. CODE: PAULIUS KAŠIUBA, DESIGN: UNKNOWN
+
+        // JQUERY, JQUERY-EASING, FOUNDATION
+        script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+        script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
+        script(type="text/javascript", src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js")
+
+        // DATE PICKER
+        script(src="https://cdn.rawgit.com/glad/glDatePicker/master/glDatePicker.min.js")
+
+        // SLY PLUGIN
+        script(type="text/javascript", src="https://cdn.rawgit.com/darsain/sly/master/dist/sly.min.js")
+
+        // MAIN JS FILE
+        script(src="https://cdn.rawgit.com/PauliusKK/ticket-events/master/js/main.min-dist.js")

@@ -1,0 +1,184 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Golden Project
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css", integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==", crossorigin="anonymous")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css", integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX", crossorigin="anonymous")
+        link(rel='stylesheet', href='https://cdn.rawgit.com/PauliusKK/golden-page/master/css/style-dist.css')
+        include mixins
+
+
+    body
+        header.home.container-fluid
+            .container
+                nav.navbar.navbar-default
+                    .navbar-header
+                        button(type='button', class='navbar-toggle collapsed', data-toggle='collapse', data-target="#bs-example-navbar-collapse-1", aria-expanded="false")
+                            span(class='icon-bar')
+                            span(class='icon-bar')
+                            span(class='icon-bar')
+                        a(class='navbar-brand', href='#')
+                            img(alt='GoldenLOGO', src='images/logo.png')
+
+                    .collapse.navbar-collapse#bs-example-navbar-collapse-1
+                        ul.nav.navbar-nav
+                            li
+                                a(href='#') HOME
+                            li
+                                a(href='#') ABOUT
+                            li
+                                a(href='#') WORK
+                            li
+                                a(href='#') BLOG
+                            li
+                                a(href='#') CONTACT
+
+            .col-md-12.text-center
+                h2.header-mini-title Welcome To Our Studio!
+                h1.header-title It’s nice to Meet you
+                +yellow-large-button('Tell Me More')
+
+
+        section.services.container-fluid
+            .container
+                +section-title('Services', 'Proin iaculis purus consequat sem cure.')
+
+
+                +services('images/services_1.png', 'E-Commerce', 'Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.')
+
+                +services('images/services_2.png', 'Responsive Web', 'Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.')
+
+                +services('images/services_3.png', 'Web Security', 'Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.')
+
+
+        section.portfolio.container-fluid
+            .container
+                +section-title('Our portfolio', 'Proin iaculis purus consequat sem cure.')
+
+                +portfolio-box('images/portfolio_1.png', 'Ebony & Ivory', 'Branding')
+                +portfolio-box('images/portfolio_2.png', 'Smart Stationary', 'Print Design')
+                +portfolio-box('images/portfolio_3.png', 'Clever Poster', 'Print Design')
+                +portfolio-box('images/portfolio_4.png', 'Vinyl Record', 'Product Mock-Up')
+                +portfolio-box('images/portfolio_5.png', 'Treehouse Template', 'Web Design')
+                +portfolio-box('images/portfolio_6.png', 'Burned Logo', 'Branding')
+
+
+        section.about.container-fluid
+            .container
+                +section-title('About Us', 'Proin iaculis purus consequat sem cure.')
+
+                .col-lg-12.col-md-12.col-sm-12.col-xs-12.text-center.about-us
+                    +about-us('July 2010', 'Our Humble Beginnings', 'Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt. Proin  iaculis purus consequat sem cure digni  ssim. Donec porttitora entum suscipit.', 'images/about_1.png')
+
+                .col-lg-12.col-md-12.col-sm-12.col-xs-12.text-center.about-us
+                    +about-us('January 2011', 'Facing Startup Battles', 'Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt. Proin  iaculis purus consequat sem cure digni  ssim. Donec porttitora entum suscipit.', 'images/about_2.png')
+
+                .col-lg-12.col-md-12.col-sm-12.col-xs-12.text-center.about-us
+                    +about-us('December 2012', 'Enter The Dark Days', 'Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt. Proin  iaculis purus consequat sem cure digni  ssim. Donec porttitora entum suscipit.', 'images/about_3.png')
+
+                .col-lg-12.col-md-12.col-sm-12.col-xs-12.text-center.about-us
+                    +about-us('february 2014', 'Our Triumph', 'Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt. Proin  iaculis purus consequat sem cure digni  ssim. Donec porttitora entum suscipit.', 'images/about_4.png')
+
+                .col-lg-12.col-md-12.col-sm-12.col-xs-12.text-center.about-us
+                    .about-description
+                        img(alt='aboutUS', class='center-block' src="images/about_5.png")
+                        .vertical-line &nbsp;
+
+
+
+        section.ourteam.container-fluid
+            .container
+                +section-title('our amazing team', 'Proin iaculis purus consequat sem cure.')
+
+                .row.row-centered
+                    .col-lg-3.col-md-4.col-sm-4.col-xs-12.col-centered.team-member
+                        +team-member('Kimberly Thompson', 'Marketer')
+                        ul.social-network.list-inline
+                            +twitter()
+                            +facebook()
+                            +picaso()
+
+                    .col-lg-3.col-md-4.col-sm-4.col-xs-12.col-centered.team-member
+                        +team-member('Rico Massimo', 'Coder')
+                        ul.social-network.list-inline
+                            +twitter()
+                            +facebook()
+                            +googleplus()
+
+                    .col-lg-3.col-md-4.col-sm-4.col-xs-12.col-centered.team-member
+                        +team-member('Uku Mason', 'Graphic Designer')
+                        ul.social-network.list-inline
+                            +facebook()
+                            +googleplus()
+
+
+                .col-md-12.text-center
+                    p.ourteam-under-social Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.
+
+
+
+        .logos.container-fluid
+            .container
+                ul.list-inline.text-center
+                    li.envato
+                        img(alt='Envato', src='images/logo_envato.png')
+                    li.wordpress
+                        img(alt='Wordpress', src='images/logo_wordpress.png')
+                    li.aetuts
+                        img(alt='AeTuts', src='images/logo_aetuts.png')
+                    li.microlancer
+                        img(alt='Microlancer', src='images/logo_microlancer.png')
+
+
+
+        section.contact.container-fluid
+            .container
+                +section-title('Contact us', 'Proin iaculis purus consequat sem cure.')
+
+                .col-lg-12.col-md-12.col-sm-12.col-xs-12.col-centered
+                    .col-lg-5.col-lg-pull-1.col-md-5.col-md-pull-1.col-sm-6.col-sm-pull-1.col-xs-12.pull-right.larger-than-mobile
+                        .form-group
+                            textarea(class='form-control', id='Message', name='message', placeholder='Your Message *', rows='8')
+                    .col-lg-5.col-lg-offset-1.col-md-5.col-md-offset-1.col-sm-4.col-sm-offset-1.col-xs-12.pull-left
+                        .form-group
+                            input(class='form-control', id='Name', name='name', placeholder='Your Name *', type='text')
+                    .col-lg-5.col-lg-offset-1.col-md-5.col-md-offset-1.col-sm-4.col-sm-offset-1.col-xs-12.pull-left
+                        .form-group
+                            input(class='form-control', id='Email', name='email', placeholder='Your Email *', type='email')
+                    .col-lg-5.col-lg-offset-1.col-md-5.col-md-offset-1.col-sm-4.col-sm-offset-1.col-xs-12.pull-left
+                        .form-group
+                            input(class='form-control', id='Subject', name='subject', placeholder='Subject *', type='text')
+                    .col-xs-12.pull-right.mobile-only
+                        .form-group
+                            textarea(class='form-control', id='Message1', name='message', placeholder='Your Message *', rows='8')
+
+                .col-xs-12.text-center
+                    +yellow-large-button('Send Message')
+
+
+        footer.container-fluid
+            .container
+                .col-lg-12.col-md-12.col-sm-12.col-xs-12.text-center.footeris
+                    ul.list-inline
+                        li.twitter
+                            .icon-box
+                                img(alt='Twitter', src='images/icon_twitter.png')
+                        li.facebook
+                            .icon-box
+                                img(alt='Facebook', src='images/icon_facebook.png')
+                        li.picaso
+                            .icon-box
+                                img(alt='Picaso', src='images/icon_picaso.png')
+                        li.googleplus
+                            .icon-box
+                                img(alt='GooglePlus', src='images/icon_googleplus.png')
+                        li.pull-left
+                            h5 &copy; Copyright 2016 Code: Paulius Kašiuba.
+
+
+        script(type='text/javascript', src='http://code.jquery.com/jquery-2.1.4.js')
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js", integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==", crossorigin="anonymous")

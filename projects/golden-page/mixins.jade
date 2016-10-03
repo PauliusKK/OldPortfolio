@@ -1,0 +1,54 @@
+mixin portfolio-box(src, title, description)
+    .col-lg-4.col-md-4.col-sm-6.col-xs-12.text-center.portfolio-box
+        img(alt='File', src=src, class='img-responsive')
+        h4.portfolio-box-heading #{title}
+        h5.portfolio-box-small-heading #{description}
+
+
+mixin section-title(title, description)
+    .col-md-12.text-center
+        h1.section-title #{title}
+        p.section-description #{description}
+
+
+mixin googleplus()
+    li.googleplus
+        img(alt='GooglePlus', src='images/darker-icon_googleplus.png')
+
+mixin twitter()
+    li.twitter
+        img(alt='Twitter', src='images/darker-icon_twitter.png')
+
+mixin facebook()
+    li.facebook
+        img(alt='Facebook', src='images/darker-icon_facebook.png')
+
+mixin picaso()
+    li.picaso
+        img(alt='Picaso', src='images/darker-icon_picaso.png')
+
+
+mixin team-member(title, description)
+    .ourteam-image
+    h4.ourteam-image-heading #{title}
+    h5.ourteam-image-semiheading #{description}
+
+
+mixin about-us(date, title, description, src)
+    .about-description
+        .about-box
+            h4.about-us-date #{date}
+            h4.about-us-title #{title}
+            p #{description}
+        img(alt='aboutUS', class='center-block' src=src)
+        .vertical-line &nbsp;
+
+
+mixin services(src, title, description)
+    .col-lg-4.col-md-4.col-sm-4.col-xs-12.text-center
+        img(alt='Commerce', src=src)
+        h4.services-title #{title}
+        h5.services-description #{description}
+
+mixin yellow-large-button(text)
+    button(type='button', class='btn btn-default btn-lg yellowbg') #{text}

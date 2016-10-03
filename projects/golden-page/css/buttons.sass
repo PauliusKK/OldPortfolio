@@ -1,0 +1,27 @@
+.btn-default.yellowbg
+    background: $darker-yellow
+    color: white
+    font-size: 18px
+    font-family: $font-montserrat
+    font-weight: bold
+    text-shadow: none
+    border: none
+    +border-radius(3px)
+    box-shadow: none
+    padding: 25px 50px
+    line-height: 1
+    text-transform: uppercase
+
+    @media screen and (max-width: $small-screen - 1)
+        padding: 25px 40px
+
+.btn-default.yellowbg:focus,
+.btn-default.yellowbg:hover
+    background: $more-darker-yellow
+    color: white
+
+.btn-default.yellowbg:active
+    background: $more-darker-yellow
+    color: white
+    position: relative
+    top: 2px

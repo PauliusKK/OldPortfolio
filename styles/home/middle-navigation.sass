@@ -1,0 +1,116 @@
+// Middle navigation for medium and large screens.
+.middle-navigation ul
+    padding: 0
+    margin-top: 20px
+
+    li.current a
+
+        // Two lines on ACTIVE on the middle navigation links
+        &:after
+            content: ' '
+            width: 140%
+            display: inline-block
+            height: 1px
+            background: $color-middle-navigation-hover
+            position: absolute
+            left: -20%
+            margin-left: 0px
+            bottom: -5px
+            opacity: 1
+            overflow: hidden
+
+        &:before
+            width: 140%
+            content: ' '
+            display: inline-block
+            height: 1px
+            background: $color-middle-navigation-hover
+            position: absolute
+            left: -20%
+            top: -4px
+            opacity: 1
+            overflow: hidden
+
+    li
+        text-align: center
+
+        a
+            color: $color-middle-navigation-color
+            font-family: 'Open Sans', sans-serif
+            font-size: 13px
+            text-transform: uppercase
+            display: inline-block
+            letter-spacing: 3px
+            position: relative
+            padding: 0
+            margin-bottom: 16px
+
+            &:before
+                width: 0%
+                content: ' '
+                display: inline-block
+                height: 1px
+                color: $color-middle-navigation-hover
+                position: absolute
+                left: -20%
+                top: -4px
+                opacity: 0
+                overflow: hidden
+
+                // ANIMATION
+                -webkit-transition: all 400ms ease
+                -moz-transition: all 400ms ease
+                -ms-transition: all 400ms ease
+                -o-transition: all 400ms ease
+                transition: all 400ms ease
+
+            &:after
+                width: 0%
+                margin-left: 100%
+                content: ' '
+                display: inline-block
+                height: 1px
+                background: $color-middle-navigation-hover
+                position: absolute
+                left: -20%
+                bottom: -5px
+                opacity: 0
+                overflow: hidden
+
+                // ANIMATION
+                -webkit-transition: all 400ms ease
+                -moz-transition: all 400ms ease
+                -ms-transition: all 400ms ease
+                -o-transition: all 400ms ease
+                transition: all 400ms ease
+
+            &:hover,
+            &:active,
+            &:focus
+                background: none
+
+            // Two lines on hover on the middle navigation links
+            &:hover:after
+                content: ' '
+                width: 140%
+                display: inline-block
+                height: 1px
+                background: $color-middle-navigation-hover
+                position: absolute
+                left: -20%
+                margin-left: 0px
+                bottom: -5px
+                opacity: 1
+                overflow: hidden
+
+            &:hover:before
+                width: 140%
+                content: ' '
+                display: inline-block
+                height: 1px
+                background: $color-middle-navigation-hover
+                position: absolute
+                left: -20%
+                top: -4px
+                opacity: 1
+                overflow: hidden

@@ -1,0 +1,65 @@
+$dark-grey: #777777
+$section-end: 110px
+$dark-white: #f7f7f7
+$light-black: #222222
+$light-grey: #bbbbbb
+$almost-white: #f1f1f1
+$darker-yellow: #fed136
+$more-darker-yellow: #ffc600
+$navbar-text-color: #d3d3d3
+
+$large-screen: 1200px
+$medium-screen: 992px
+$small-screen: 768px
+
+@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+
+@import fonts
+@import buttons
+@import home
+@import services
+@import portfolio
+@import about-us
+@import our-team
+@import logos
+@import contact-us
+@import footers
+
+// $font-montserrat: 'Montserrat', sans-serif
+// $font-robotoslab: 'Roboto Slab', serif
+// $font-droidserif: 'Droid Serif', serif
+
+
+.section-title
+    padding-top: $section-end
+    font-family: $font-montserrat
+    font-size: 40px
+    text-transform: uppercase
+    font-weight: bold
+
+.section-description
+    font-family: $font-droidserif
+    font-size: 16px
+    color: $dark-grey
+    padding-bottom: 75px
+
+
+.list-inline
+    margin-left: 0
+
+.col-centered
+    display: inline-block
+    float: none
+    text-align: left
+    margin-right: -4px
+
+.row-centered
+    text-align: center
+
+// body
+//     overflow-x: hidden

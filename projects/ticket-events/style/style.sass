@@ -1,0 +1,134 @@
+// Color variables
+$color-gray: #f6f6f6
+$color-lightblue: #1e84cc
+$color-progressbar: #008cff
+$color-borders: #dcdcdc
+$color-dropdown: #cccccc
+$color-ticket-border: #e6e6e6
+$color-orange: #ef8742
+$color-event-label-button-border: #95c3e3
+$color-event-label-button-inside: #ddedf7
+$color-information-tab-border: #b1b1b1
+$color-footer: #2d2d30
+$color-social-button-border: #d7d7d7
+$color-recommended-inside-border: #e3e3e3
+$color-vertical-line: #2c3e52
+$color-darkblue: #1b6faa
+$color-icon-background: #fefefe
+$color-star-active: #f6b63a
+$color-star-inactive: #d7d7d7
+$color-footer-button-hover: #1d7cc0
+$color-social-button-hover: #e3e2e2
+$color-callout-hover: #17669d
+$color-close-hover: #e05543
+$color-checkout-hover: #1d77b6
+
+
+
+// Text color variables
+$text-header: #919191
+$text-searchbox: #b7b7b7
+$text-shopping-info: #bababa
+$text-menu-left: #303030
+$text-menu-right: #989898
+$text-ticket-description: #808080
+$text-image-gray: #7e7e7e
+$text-event-label: #2c3e52
+$text-event-description: #878787
+$text-information-tab-description: #acacac
+$text-footer-services: #acacad
+$text-footer-menu: #f7f6f5
+$text-social-media-heading: #5b5b5b
+$text-image-right-description: #dadada
+$text-label: #414040
+$text-shop-description: #a3a3a3
+$text-left-categories: #6e6e6e
+$text-input: #b7b7b7
+$text-option: #6e6e6e
+$text-star-rating: #aaaaaa
+$text-footer-menu-hover: #c4c4c4
+$text-social-hover: #1e1e1e
+$text-image-hover: #d7d7d7
+$text-main-image-hover: #1a6fac
+$text-currency: #aaaaaa
+$text-small-event-calendar: #757575
+
+
+// Social media color variables
+$social-facebook: #425f9c
+$social-twitter: #55acee
+$social-googleplus: #e02321
+$social-instagram: #3f160d
+
+
+
+// > 1040px - large screen.
+// > 640px - medium screen
+// < 640px - small screen
+
+
+
+
+// File imports START
+
+// Responsive
+@import "screen-small" // from 300px to 640px
+@import "screen-medium" // from 640px to 1024px
+
+// Main files
+@import "menu-navigation"
+@import "image-text"
+@import "rows-margins-paddings"
+// -----------------
+
+// Website sections
+@import "header"
+@import "search-section"
+@import "navigation"
+@import "left-categories"
+@import "shop-section"
+@import "hot-tickets"
+@import "sports-section"
+@import "recommended-section"
+@import "5-sport-events"
+@import "social-media"
+@import "information-tab"
+@import "footer"
+//  -----------------
+
+// File imports END
+
+// Sets background to blue at Calendar days section
+.dow
+    background: linear-gradient(to bottom,  #ff0000 1%,#ffcccc 1%, #1E84CD 2%,#1e84cc 98%, #1e84cc 99%, #1e84cc 100%) !important
+
+// Sets every text to font-family Montserrat.
+*
+    font-family: "Montserrat", sans-serif
+
+
+// Sets body background color to gray
+body
+    background-color: $color-gray
+
+
+// Star rating
+.rating
+    display: inline
+
+    i
+        color: $color-star-active
+        font-size: 1.1em
+        margin: 0 0.15em
+
+    .inactive
+        color: $color-star-inactive
+
+    a
+        font-size: 0.9em
+        margin-left: 5px
+        color: $text-star-rating
+
+
+
+// RANDOM BANDYMAI

@@ -1,0 +1,77 @@
+// Information tab childs, changing margins.
+.information-tab:first-child
+    p
+        margin-right: 65px
+
+.information-tab:nth-child(2)
+    padding-left: 0
+    padding-right: 0.25rem
+    margin-left: -20px
+
+.information-tab:nth-child(3)
+    p
+        margin-right: 15px
+
+    margin-left: 20px
+    padding: 0
+
+.information-tab:nth-child(4)
+    h5
+        margin-right: 45px
+
+    padding: 0
+
+    .float-left
+        margin-left: 25px
+
+
+// Information tab
+.information-tab
+
+    li:first-child
+
+        .ticket, .shipping, .refund
+            border-radius: 100%
+            border: 2px solid $color-information-tab-border
+            width: 65px
+            height: 65px
+            position: relative
+
+            img
+                position: absolute
+                margin: auto
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+
+        // STAR DIV
+        .star
+            background-color: $color-lightblue
+            border-radius: 100%
+            width: 65px
+            height: 65px
+            position: relative
+
+            img
+                position: absolute
+                margin: auto
+                top: -2px
+                left: 2px
+                right: 0
+                bottom: 0
+
+
+    li:last-child
+        padding-left: 15px
+
+        h5
+            margin-top: 15px
+            color: $text-menu-left
+            font-weight: bold
+            font-size: 18px
+
+        p
+            color: $text-information-tab-description
+            font-size: 15px
+            margin-top: -10px

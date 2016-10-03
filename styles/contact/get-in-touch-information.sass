@@ -1,0 +1,105 @@
+section .container .row .col-md-10
+
+    // Get in touch styles
+    .col-md-7
+
+            .warning::-webkit-input-placeholder
+                color: red !important
+
+            .warning
+                border-color: red !important
+
+            #thankyou_message
+
+                h2
+                    font-family: 'Raleway', sans-serif
+                    font-weight: 400
+                    letter-spacing: 0.75px
+                    font-size: 20px
+                    margin-top: 35px
+
+            h4
+                margin-top: 0px
+                padding-top: 0px
+                margin-bottom: 8px
+                letter-spacing: 0.8px
+                font-weight: 400
+                font-family: 'Raleway', sans-serif
+
+            form
+                font-family: 'Raleway', sans-serif
+
+                label
+                    display: block
+                    font-weight: 400
+                    font-size: 12px
+                    margin-bottom: 0px
+                    padding-top: 4px
+                    text-transform: uppercase
+                    letter-spacing: 3px
+                    line-height: 26.25px
+                    color: $color-h4-contact
+
+                input
+                    margin-bottom: 18px
+
+                    &[type="text"],
+                    &[type="email"]
+                        padding: 7px 10px
+                        border: 1px solid $color-input-contact-border
+                        border-radius: 5px
+                        letter-spacing: 2px
+                        color: $color-input-contact-text
+                        width: 60%
+
+                    // ANIMATION
+                    -webkit-transition: color 200ms ease
+                    -moz-transition: color 200ms ease
+                    -ms-transition: color 200ms ease
+                    -o-transition: color 200ms ease
+                    transition: color 200ms ease
+
+                textarea
+                    padding: 10px 16px
+                    border: 1px solid $color-input-contact-border
+                    border-radius: 5px
+                    letter-spacing: 2px
+                    font-size: 15px
+                    color: $color-input-contact-text
+                    width: 100%
+
+                // Removes default google LIGHT BLUE outline and sets new one.
+                input:focus, textarea:focus, button:focus
+                    border-color: $color-input-focus-border !important
+                    outline: none
+
+                input:focus::-webkit-input-placeholder,
+                textarea:focus::-webkit-input-placeholder
+                    color: $color-portfolio-placeholder-focus !important
+                    outline: none
+
+                button
+                    letter-spacing: 2px
+                    text-align: center
+                    display: inline-block
+                    border: 1px solid $color-button-contact-border
+                    padding: 10px
+                    color: $color-button-contact-text
+                    font-size: 11px
+                    text-transform: uppercase
+                    font-weight: 500
+                    background: transparent
+                    border-radius: 8px
+                    margin-top: 18px
+                    float: right
+
+                    // ANIMATION
+                    -webkit-transition: all 200ms ease;
+                    -moz-transition: all 200ms ease;
+                    -ms-transition: all 200ms ease;
+                    -o-transition: all 200ms ease;
+                    transition: all 200ms ease;
+
+                    &:hover
+                        border-color: black
+                        color: $color-button-contact-hover

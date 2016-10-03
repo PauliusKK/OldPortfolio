@@ -1,0 +1,79 @@
+// About me column styles
+section .container .row .home-about-me
+
+    h3
+        font-size: 21px
+        font-weight: 500
+        color: $color-personal-header-text
+        letter-spacing: 1.3px
+        margin-top: 0px
+        margin-bottom: 25px
+        font-family: 'Raleway', sans-serif
+        text-transform: uppercase
+
+    p
+        margin-bottom: 35px
+        text-align: justify
+        font-size: 15px
+        font-family: 'Raleway', sans-serif
+        letter-spacing: 1.1px
+        line-height: 26.25px
+
+ul.about-me-ul
+    padding-left: 0
+    list-style-type: none
+
+    li.first-li
+        margin-top: 10px
+        list-style-type: none
+
+    li
+        font-family: 'Raleway', sans-serif
+        letter-spacing: 1.1px
+        font-size: 15px
+        color: $color-personal-header-text
+        list-style-type: circle
+
+        a
+            color: $color-footer-hover
+            position: relative
+            text-decoration: none
+
+            // ANIMATION
+            -webkit-transition: color 200ms ease
+            -moz-transition: color 200ms ease
+            -ms-transition: color 200ms ease
+            -o-transition: color 200ms ease
+            transition: color 200ms ease
+
+            &:hover
+                color: $color-footer-a-hover
+
+            &:after
+                width: 0%
+                margin-left: 100%
+                content: ' '
+                display: inline-block
+                border-bottom: 1px solid $color-footer-text-underline
+                position: absolute
+                left: -20%
+                bottom: 0 !important
+                opacity: 0
+
+                // ANIMATION
+                -webkit-transition: all 200ms ease
+                -moz-transition: all 200ms ease
+                -ms-transition: all 200ms ease
+                -o-transition: all 200ms ease
+                transition: all 200ms ease
+
+            &:hover:after
+                content: ' '
+                width: 100%
+                display: inline-block
+                border-bottom: 1px solid $color-footer-text-underline
+                position: absolute
+                left: 0%
+                margin-left: 0px
+                bottom: -4px
+                opacity: 1

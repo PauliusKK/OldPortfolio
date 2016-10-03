@@ -1,0 +1,109 @@
+// Header
+header
+    background-color: $color-gray
+
+    .top-bar
+        background-color: $color-gray
+        padding: 0
+
+        li
+            background-color: $color-gray
+            padding: 0
+
+        // Header main column
+        .top-bar-left
+            margin-top: 15px
+
+            p
+                color: $text-header
+                font-family: 'Montserrat', sans-serif
+                font-size: 15px
+                font-weight: normal
+
+        .top-bar-right
+            margin-top: 12px
+
+            ul
+
+                li
+                    padding-left: 15px
+
+                    i
+                        color: $color-dropdown
+                        padding-right: 5px
+                        font-size: 18px
+
+                    button
+                        padding: 0.40em
+                        background: none
+                        color: $text-header
+                        font-size: 15px
+                        font-family: "Open Sans", sans-serif
+
+                    button:focus,
+                    button:active,
+                    button:hover
+                        background-color: #e9e9e9
+                        border-radius: 5px
+
+                    button:after
+                        border-color: $color-dropdown transparent transparent !important
+
+                    // MY ACCOUNT DROPDOWN
+                    .content
+                        position: relative
+
+                    .menu
+                        top: 30px
+                        position: absolute
+                        z-index: 10
+                        left: -85px
+                        display: none
+
+                        a
+                            font-size: 15px
+                            font-family: "Open Sans", sans-serif
+                            display: block
+                            background: #F8F8F8
+                            width: 200px
+                            height: 40px
+                            color: $text-header
+                            line-height: 40px
+                            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+                            padding: 0 0 0 10px
+                            text-align: left
+
+                            &:nth-child(2)
+                                border-top-left-radius: 5px
+                                border-top-right-radius: 5px
+
+                            &:last-child
+                                border-bottom-left-radius: 5px
+                                border-bottom-right-radius: 5px
+
+                            &:hover
+                                color: #555555
+
+                            .icon
+                                float: right
+                                //margin-top: 10px
+                                font-size: 20px
+                                color: $text-header
+                                opacity: 0.8
+
+                                &:hover,
+                                &:active,
+                                &:focus
+                                    color: #555555
+
+                            .icon.fi-widget
+                                margin-right: 11px
+
+                            .icon.fi-graph-pie
+                                margin-right: 12px
+
+                            .icon.fi-torsos-all
+                                margin-right: 11px
+
+                            .icon.fi-paypal
+                                margin-right: 15px

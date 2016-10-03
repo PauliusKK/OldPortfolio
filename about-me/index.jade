@@ -1,0 +1,105 @@
+doctype html
+html(lang='en-US')
+    head
+        title About Me | Paulius Kašiuba - Front-end Developer Lithuania
+
+        include ../metatags
+
+        // START of LINKS
+
+        // Main CSS file
+        link(rel="stylesheet", href="../styles/style-dist.css")
+
+        include ../mixins
+
+        // END of LINKS
+
+    body
+
+        header
+
+            // Header for medium and large screens
+            .container.personal-header.hidden-xs.hidden-sm
+                .row
+                    .col-md-12: a(href="/") Paulius Kašiuba
+
+            // Header (NAVIGATION) for extra small and small screens
+            .container.hidden-md.hidden-lg
+                nav.navbar.navbar-default
+
+                    // Collapse-able navigation header and 3 icon bars when resolution is small
+                    .navbar-header
+                        button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navigation-bar", aria-expanded="false")
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+
+                    // Navigation bar with links, collapses when it screen turns small.
+                    .collapse.navbar-collapse#navigation-bar
+                        ul.nav.navbar-nav
+                            li: a(href="../") Home
+                            li.active: a(href="/") About Me
+                            li: a(href="../portfolio/") Portfolio
+                            li: a(href="../contact/") Contact
+
+                // Main text, only visible on small screens and below that.
+                p.main-text: a(href="/") Paulius Kašiuba
+
+
+        // Main section. Navigation and about me in the About me page is stored here.
+        section
+            .container
+                .row
+
+                    // Navigation line for medium and large screens
+                    .col-md-2.hidden-sm.hidden-xs.middle-navigation
+
+                        // Navigation links starts
+                        ul.nav.nav-pills.nav-stacked
+                            li: a(href="../") Home
+                            li.current: a(href="/") About Me
+                            li: a(href="../portfolio/") Portfolio
+                            li: a(href="../contact/") Contact
+
+
+                    // About Me column
+                    .col-md-10
+                        h3 About Me
+
+                        p I’m a freelance Front End Web Developer based in Vilnius, Lithuania. I’m sure you just want to check out my work, so I’ll be quick. The work I provide is of high quality, fully responsive and tested in many browsers and devices. I ensure you that each project will be well-documentated and easily maintainable, so you’ll pretty much know what those blocks of code do.
+
+                        h3(style="margin-top: 35px") Skills
+
+                        p
+                            | I create responsive websites that allow the user to have the best experience in any device they’re using. Writing semantic markup that is documented and easy to maintain means if it scales in the future, it will be easy to maintain. I always use Prepros application to convert and compress the files I’m working on, that way the size of the files is decreased and website loads faster.
+                            br
+                            br
+                            |  Clean (as well as organized) code is really important for me while working on the project. To achieve it I’m using preprocessors for HTML and CSS languages. That way I can convert many files into one by importing one file to another and so on, so forth.
+                            br
+                            br
+                            |  I’m using Git on basically every project I’m working on. I love version control and couldn’t work without it. It keeps me sure that if something went wrong I still have a plan B. I can quickly and efficiently join your team using GitHub, Bitbucket or any other version control project.
+                            br
+                            br
+                            |  Deadline is deadline and it’s my number one priority. I will do everything to deliver on time, no matter what. I respect every person and his time.
+
+                        h3 Skills in structural view
+
+                        ul.about-me-ul
+                            li.first-li HTML
+                                ul: li: a(href="http://jade-lang.com/") JADE (Preprocessor)
+
+                            li.first-li CSS
+                                ul
+                                    li: a(href="http://sass-lang.com/") SASS (Preprocessor)
+                                    li: a(href="http://getbootstrap.com/") BOOTSTRAP (Framework)
+                                    li: a(href="http://foundation.zurb.com/") FOUNDATION (Framework)
+
+                            li.first-li JAVASCRIPT
+                                ul
+                                    li: a(href="https://jquery.com/") jQuery
+                                    li: a(href="https://angularjs.org/") AngularJS (learning)
+
+                            li.first-li PERFORMANCE
+
+
+        include ../footer

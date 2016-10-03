@@ -1,0 +1,42 @@
+footer ul.list-inline
+    margin-top: 20px
+    margin-bottom: 20px
+
+    @media screen and (max-width: 303px)
+        width: 230px
+        margin-left: -16px!important
+
+    li.pull-left
+        position: absolute
+        left: 0
+        top: 25px
+
+        @media screen and (max-width: $small-screen - 1)
+            top: 45px
+            right: 0
+
+        @media screen and (min-width: $small-screen) and (max-width: $medium-screen - 1)
+            top: 55px
+            right: 0
+
+        h5
+            font-family: $font-montserrat
+            font-weight: normal
+
+            @media screen and (max-width: $small-screen - 1)
+                margin: 25px auto 0 auto
+
+.icon-box
+    background: black
+    width: 40px
+    height: 40px
+    +border-radius(100%)
+    position: relative
+
+.icon-box img
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto

@@ -1,0 +1,63 @@
+.ourteam
+    background: $dark-white
+
+.ourteam-image
+    width: 220px
+    height: 220px
+    background: black
+    +border-radius(100%)
+    margin: 0 auto
+
+.ourteam-image-heading
+    font-size: 16px
+    font-family: $font-montserrat
+    font-weight: bold
+    text-align: center
+    padding-top: 15px
+
+.ourteam-image-semiheading
+    color: $dark-grey
+    font-family: $font-robotoslab
+    font-weight: normal
+    text-align: center
+    line-height: 50%
+
+ul.social-network
+    margin-top: 15px
+    width: 100%
+    text-align: center
+
+    @media screen and (max-width: $small-screen - 1)
+        margin-bottom: 50px
+
+    li
+        margin: 0 2px
+        width: 40px
+        height: 40px
+        border: 3px solid black
+        +border-radius(100%)
+        position: relative
+        img
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            margin: auto
+
+.ourteam-under-social
+    color: $dark-grey
+    font-size: 16px
+    font-weight: normal
+    font-family: $font-robotoslab
+    padding-top: 35px
+    margin: 0 215px 0 215px
+    line-height: 150%
+    padding-bottom: $section-end
+
+    @media screen and (max-width: $small-screen - 1)
+        margin-top: -40px
+        margin: 0
+
+    @media screen and (min-width: $small-screen) and (max-width: $medium-screen - 1)
+        margin: 0

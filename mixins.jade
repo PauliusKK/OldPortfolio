@@ -1,0 +1,29 @@
+// Creates portfolio square item, holding image and has hover effect.
+mixin portfolioItem(itemClass, href, IMGsrc, IMGalt)
+
+    // Bootstrap columns
+    .col-sm-3.col-md-6.col-xs-12
+
+        // Square portfolio item
+        .item
+
+            // Image
+            a(href=href)
+                img(class="#{itemClass}", src=IMGsrc, alt="#{IMGalt} - Portfolio | Paulius Kašiuba, Front-end Developer based in Vilnius, Lithuania")
+
+            // This shows on the image when its hovered
+            a.hover(href=href)
+                h3 #{IMGalt}
+
+// Creates item in portfolio page
+mixin ItemInPortfolioPage(itemClass, href, IMGclass, IMGsrc, IMGalt)
+
+    // Div with data category attribute
+    .item(class="#{itemClass}")
+
+        // Image
+        a(href=href)
+            img(class="#{IMGclass}", src=IMGsrc, alt="#{IMGalt} - Portfolio | Paulius Kašiuba, Front-end Developer based in Vilnius, Lithuania")
+
+        a.hover(href=href)
+            h3 #{IMGalt}

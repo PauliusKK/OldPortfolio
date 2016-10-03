@@ -1,0 +1,754 @@
+body
+{
+    overflow-x: hidden;
+}
+
+*
+{
+    font-family: 'Titillium Web', sans-serif;
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* BACKGROUND-COLORS */
+/*---------------------------------------------------------------------------------------------------------------------------*/
+.violetine
+{
+    background-color: #87509c;
+}
+
+.sviesiaizalia
+{
+    background-color: #17c2a4;
+}
+
+.pilka
+{
+    background-color: #e7f1f8;
+}
+
+.balta
+{
+    background-color: #fff;
+}
+
+.kremine
+{
+    background-color: #ffdd99;
+}
+
+.ruzava
+{
+    background-color: #d74680;
+}
+
+.tamsiaimelyna
+{
+    background-color: #3c5499;
+}
+
+.footermelyna
+{
+    background-color: #344b8e;
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/* end of BACKGROUND-COLORS */
+
+
+
+/* VISI TEXT SIZE, MARGINS, PADDINGS, SPALVOS */
+/*---------------------------------------------------------------------------------------------------------------------------*/
+.text-white
+{
+    color: #fff;
+}
+
+h1
+{
+    word-spacing: 10px;
+}
+
+h1, h3
+{
+    font-weight: bold;
+}
+
+h3
+{
+    text-transform: uppercase;
+}
+
+.text-16
+{
+    font-size: 16px;
+}
+
+
+
+.marginas
+{
+    margin-bottom: 140px;
+}
+
+.paddingtop20
+{
+    padding-top: 20px;
+}
+
+.paddingbottom75
+{
+    padding-bottom: 75px;
+}
+
+.paddingbottom120
+{
+    padding-bottom: 120px;
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/* end of VISI TEXT SIZE, MARGINS, PADDINGS, SPALVOS */
+
+
+
+
+/* BUTTONS */
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+/* BUTTON-WARNING (headerio mygtukas) */
+/*------------------------------------------------------------------*/
+.btn-warning
+{
+    background-color: #eb7d4b;
+    background-image: none;
+    border-radius: 4px;
+}
+
+.btn-warning:focus,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+    color: #fff;
+    background-color: #eb7d4b;
+    border-color: #eb7d4b;
+}
+
+.btn-warning:hover
+{
+    background-color: #e47a4a;
+    border-color: none;
+}
+
+.btn-warning.raised {
+    box-shadow: 0 4px 0 0 #c86a40;
+}
+
+.btn-warning.raised:active, .btn-warning.raised.active {
+    background: #e47a4a;
+    box-shadow: none;
+    margin-bottom: -4px;
+    margin-top: 4px;
+}
+
+.btn-group-lg>.btn, .btn-lg
+{
+    padding: 25px 80px;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+/*------------------------------------------------------------------*/
+/* end of BUTTON-WARNING */
+
+
+/* BUTTON-SUCCESS (portfolio mygtukas) */
+/*------------------------------------------------------------------*/
+.btn-success
+{
+    background-color: #17c2a4;
+    background-image: none;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-success:focus,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #19bb9f;
+    border-color: #19bb9f;
+}
+
+.btn-success:hover
+{
+    background-color: #19bb9f;
+    border-color: none;
+}
+
+.btn-success.raised {
+    box-shadow: 0 4px 0 0 #14a58c;
+}
+
+.btn-success.raised:active, .btn-success.raised.active {
+    background: #19bb9f;
+    box-shadow: none;
+    margin-bottom: -4px;
+    margin-top: 4px;
+}
+/*------------------------------------------------------------------*/
+/* end of BUTTON-SUCCESS */
+
+
+/* BUTTON-PRIMARY (contact us mygtukas) */
+/*------------------------------------------------------------------*/
+.btn-primary
+{
+    background-color: #30bae7;
+    background-image: none;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-primary:focus,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #2eb1dc;
+    border-color: #2eb1dc;
+}
+
+.btn-primary:hover
+{
+    background-color: #2eb1dc;
+    border-color: none;
+}
+
+.btn-primary.raised {
+    box-shadow: 0 4px 0 0 #299ec5;
+}
+
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #2eb1dc;
+    box-shadow: none;
+    margin-bottom: -4px;
+    margin-top: 4px;
+}
+/*------------------------------------------------------------------*/
+/* end of BUTTON-PRIMARY */
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/* end of BUTTONS */
+
+
+
+/* HEADERIO NAVIGACIJA, PORTFOLIO NAVIGACIJA (nav-pills) */
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+/* PORTFOLIO NAV-PILLS */
+/*------------------------------------------------------------------*/
+.center-pills
+{
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio_nav
+{
+    margin-top: 40px;
+    padding-bottom: 65px;
+}
+
+.portfolio_nav li a
+{
+    border-radius: 3px;
+    background-color: rgba(0,0,0,.085);
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #393939;
+}
+
+.portfolio_nav li
+{
+    height: 40px!important;
+    width: 95px!important;
+    padding: 0 5px;
+}
+
+.portfolio_nav>li.active>a,
+.portfolio_nav>li.active>a:focus,
+.portfolio_nav>li.active>a:hover
+{
+    color: #ebc985;
+    background-color: #fff;
+}
+
+.portfolio_nav>li>a:focus,
+.portfolio_nav>li>a:hover
+{
+    background-color: #fff;
+    color: #ebc985;
+}
+/*------------------------------------------------------------------*/
+/* end of PORTFOLIO NAV-PILLS */
+
+
+/* HEADERIO NAVIGACIJA */
+/*------------------------------------------------------------------*/
+.navbar-default
+{
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    background-repeat: no-repeat;
+}
+
+.navbar-brand, .navbar-nav>li>a
+{
+    text-shadow: none;
+}
+
+.navbar-nav
+{
+    float: none;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a
+{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+{
+    color: #fff;
+    background: rgba(0,0,0,.4);
+}
+
+.navbar-collapse
+{
+    border-color: none;
+    border-top: none;
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
+}
+.navbar-default .navbar-nav>li>a
+{
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus
+{
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.navbar-default .navbar-nav>li
+{
+    margin-top: 10px;
+    padding: 0 5px;
+}
+
+.navbar-brand img
+{
+    margin-top: 30px;
+    margin-left: -15px;
+}
+
+.navbar-default .navbar-toggle
+{
+    background-color: #ddd;
+    margin-top: 50px;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus
+{
+    background-color: #d1d1d1;
+}
+
+.navbar-default .navbar-toggle .icon-bar
+{
+    background-color: #777;
+}
+/*------------------------------------------------------------------*/
+/* end of HEADERIO NAVIGACIJA */
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/* end of HEADERIO NAVIGACIJA, PORTFOLIO NAVIGACIJA (nav-pills) */
+
+
+
+
+
+/* HEADERIU TEXTU NUSTATYMAI */
+/*---------------------------------------------------------------------------------------------------------------------------*/
+.header_text_header
+{
+    padding-top: 120px;
+    font-size: 42px;
+    color: #fff;
+    padding-bottom: 50px;
+    text-shadow: .4px .4px #fff;
+    word-spacing: 5px;
+}
+
+.header-text
+{
+    color: #fff;
+    font-size: 40px;
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/* end of HEADERIU TEXTU NUSTATYMAI */
+
+
+
+
+/* PARAGRAFU TEXTU INFORMACIJA, NUSTATYMAI */
+/*---------------------------------------------------------------------------------------------------------------------------*/
+.services_under
+{
+    font-size: 18px;
+    margin-top: 20px;
+    padding-bottom: 70px;
+}
+
+.services_pictures_under
+{
+    font-size: 16px;
+    padding-bottom: 120px;
+}
+
+.team_header_under
+{
+    font-size: 18px;
+    color: #3c4761;
+    margin-top: 20px;
+    padding-bottom: 70px;
+}
+
+.text_under_foto
+{
+    font-size: 16px;
+    color: #00bbf5;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.description_person
+{
+    color: #3c4761;
+    padding-bottom: 10px;
+}
+
+.text_under_skills
+{
+    word-spacing: 2px;
+    text-shadow : 0 0 0 #3c4761;
+    font-size: 18px;
+    color: #3c4761;
+    margin-top: 15px;
+    padding-bottom: 70px;
+}
+
+.text_under_skills_info
+{
+    color: #3c4761;
+    padding-top: 20px;
+    padding-bottom: 110px;
+}
+
+.text_under_portfolio_header
+{
+    padding-top: 20px;
+    font-size: 18px;
+    word-spacing: 2px;
+}
+
+.text_under_portfolio_foto
+{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 18px;
+}
+
+.text_under_clients_header
+{
+    color: #fff;
+    padding-top: 20px;
+    font-size: 18px;
+    word-spacing: 2px;
+    padding-bottom: 65px;
+}
+
+.clients_description_p
+{
+    text-align: justify;
+    font-size: 21px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.clients_description_h3
+{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.clients_description_h4
+{
+    margin-top: -5px;
+    color: #ffdd99;
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/* end of PARAGRAFU TEXTU INFORMACIJA, NUSTATYMAI */
+
+
+
+
+
+/* INPUTS, ICONS, BLACKLINE */
+/*---------------------------------------------------------------------------------------------------------------------------*/
+input[type=text], input[type=email]
+{
+    color: #fff;
+    height: 50px;
+    border-radius: 3px;
+    background: rgba(0,0,0,.3);
+    border: none;
+}
+
+textarea.form-control
+{
+    color: #fff;
+    border-radius: 3px;
+    background: rgba(0,0,0,.3);
+    border: none;
+}
+/*------------------------------------------------------------------*/
+.icons
+{
+    padding-bottom: 100px;
+}
+
+.icons ul
+{
+    list-style-type: none;
+}
+
+.icons ul li
+{
+    display: inline-block;
+    padding: 4px;
+}
+
+.icon
+{
+    width: 32px;
+    height: 32px;
+    background-color: #bdd1df;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.icon img
+{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon:hover
+{
+    background-color: #aebfcb;
+}
+/*------------------------------------------------------------------*/
+.blackline
+{
+    margin-top: -5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4px;
+    width: 85px;
+    background-color: rgba(0,0,0,.15);
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/* end of INPUTS, ICONS, BLACKLINE */
+
+
+
+
+
+/* FOOTERIS */
+/*---------------------------------------------------------------------------------------------------------------------------*/
+.footer
+{
+    border-top: 1px solid rgba(255,255,255,.25);
+}
+
+.footer_links li
+{
+    padding: 40px 39px 30px 39px;
+}
+
+.footer_links li a
+{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer_links li a:hover
+{
+    color: #30bae7;
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/* end of FOOTERIS */
+
+
+
+
+
+/* OTHER (INPUT TEXT COLOR, IMG-RESPONSIVE, COL-CENTERED), _FOTO NUSTATYMAI */
+/*---------------------------------------------------------------------------------------------------------------------------*/
+#Name::-webkit-input-placeholder,
+#Email::-webkit-input-placeholder,
+#Message::-webkit-input-placeholder
+{
+  color:    #FFF;
+}
+
+
+.img-responsive
+{
+    margin: 0 auto;
+}
+
+
+.col-centered
+{
+    float: none;
+    margin: 0 auto;
+}
+/*------------------------------------------------------------------*/
+.team_foto
+{
+    width: 200px;
+    height: 200px;
+    background-color: #878787;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.skills_info
+{
+    background-color: black;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+
+.clients_foto
+{
+    margin-top: -95px;
+    margin-right: 50px;
+    width: 96px;
+    height: 96px;
+    background-color: #787878;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/* end of OTHER (INPUT TEXT COLOR, IMG-RESPONSIVE, COL-CENTERED), _FOTO NUSTATYMAI */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px)
+{
+    .navbar-brand img {
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form
+    {
+        border: none;
+        border-color: none;
+    }
+
+    .navbar-nav
+    {
+        margin-top: 30px;
+        float: right;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .review4 {
+        margin-top: -300px;
+    }
+    .navbar-nav
+    {
+        float: right;
+    }
+    .navbar-default .navbar-nav>li
+    {
+        margin-top: 55px;
+        padding: 0 5px;
+    }
+
+    .navbar-nav>li>a
+    {
+        line-height: 0;
+    }
+
+    .navbar-collapse
+    {
+        border-bottom: none;
+    }
+    .navbar-nav
+    {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .review4 {
+        margin-top: 0px;
+    }
+}

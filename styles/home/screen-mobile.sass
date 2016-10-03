@@ -1,0 +1,109 @@
+@media screen and (max-width: 767px) and (min-width: 480px)
+
+    // Sets columns to have width of 50 percent to show two items in one line.
+    section .container .row .col-xs-12 .col-xs-12
+        width: 50%
+
+    ul.about-me-ul
+        padding-left: 10px
+
+@media screen and (max-width: 767px)
+
+    ul.about-me-ul
+        padding-left: 10px
+        margin-bottom: 25px
+
+    // Footer styles (social media list, information list, global footer styles)
+    footer .container .row .col-md-8
+        display: none
+
+    footer .container .row .col-md-4
+        text-align: center
+
+    footer
+        margin-top: 20px
+
+
+    // styles for columns to center it on mobile (<480px) screen
+    section .container .row .col-xs-12 .col-xs-12
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        padding: 0 5px
+
+
+    // Makes portfolio image bigger
+    .item
+        height: 205px !important
+        margin-bottom: 25px !important
+
+    // Navigation bar button on mobile screen hover effect styles (shakes when its hovered)
+    .navbar-toggle:hover
+        animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both
+        transform: translate3d(0, 0, 0)
+        backface-visibility: hidden
+        perspective: 1000px
+
+    @keyframes shake
+
+        10%, 90%
+            transform: translate3d(-1px, 0, 0)
+
+        20%, 80%
+            transform: translate3d(2px, 0, 0)
+
+        30%, 50%, 70%
+            transform: translate3d(-4px, 0, 0)
+
+        40%, 60%
+            transform: translate3d(4px, 0, 0)
+
+    // Navigation styles for small screens
+    .navbar-toggle .icon-bar
+        width: 16px
+        background: $color-mobile-navigation-circle !important
+
+    .navbar-toggle
+        border: 1px solid $color-mobile-navigation-border
+        border-radius: 50%
+        -webkite-border-radius: 50%
+        -moz-border-radius: 50%
+        text-align: center
+        color: $color-mobile-navigation-circle
+
+    .navbar-collapse
+        padding-right: 0
+        padding-left: 0
+        border-top: none
+
+    // sets menu to center of the page
+    ul.nav.navbar-nav
+        padding: 0
+        margin: 4px 0
+        font-size: 0px
+        width: 100%
+
+        // border bottom for every list item
+        li
+            border-bottom: 1px solid $color-mobile-border-bottom
+            position: relative
+
+    // Other navigation styles, including hover, about me text.
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
+        background: none
+
+    p.text-inside
+        text-align: justify
+        font-size: 15px
+        font-family: 'Raleway', sans-serif
+        letter-spacing: 1.1px
+        line-height: 26.25px
+        margin: 15px 10px
+
+    header .container .navbar-default
+        padding: 20px 0
+
+    section .container .row .home-about-me
+        display: none

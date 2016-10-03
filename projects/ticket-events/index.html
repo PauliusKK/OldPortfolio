@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ticket Event</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- START of LINKS-->
+    <!-- Normalize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+    <!-- Foundation and Foundation-icons CSS files.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css">
+    <!-- glDatePicker default styles.-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/glad/glDatePicker/master/styles/glDatePicker.default.css">
+    <!-- Montserrat, Open Sans fonts.-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic">
+    <!-- Main style sheet.-->
+    <!--link(rel="stylesheet", href="style/style-dist.css")-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/PauliusKK/ticket-events/master/style/style.min.css">
+    <!-- END of LINKS-->
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div data-responsive-toggle="example-menu" data-hide-for="medium" class="title-bar">
+          <button type="button" data-toggle class="menu-icon"></button>
+          <div class="title-bar-title">Navigation</div>
+        </div>
+        <div id="example-menu" class="top-bar">
+          <div class="top-bar-left">
+            <ul data-dropdown-menu class="dropdown menu">
+              <li class="menu-text show-for-large">
+                <p>Hello, <strong>USERNAME</strong></p>
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar-right show-for-medium">
+            <ul class="menu">
+              <!-- Location information-->
+              <li><i class="fi-marker"></i>
+                <button class="dropdown button">Chicagoland & Northern IL</button>
+              </li>
+              <!-- Account information-->
+              <li>
+                <button class="content dropdown button">My Account<span class="cog octicon octicon-gear"></span>
+                  <div class="menu"><a href="#">Settings<span class="icon fi-widget"></span></a><a href="#">Web Statistics<span class="icon fi-graph-pie"></span></a><a href="#">Edit Users<span class="icon fi-torsos-all"></span></a><a href="#">Donate<span class="icon fi-paypal"></span></a></div>
+                </button>
+              </li>
+              <!-- Shopping cart ONLY FOR SMALL SCREEN-->
+              <li class="show-for-small-only"><i class="fi-shopping-cart"></i>
+                <button class="dropdown button">3 Item(s) - $578.14</button>
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar-right show-for-small-only">
+            <ul class="menu vertical">
+              <!-- Location information-->
+              <li>
+                <ul class="menu">
+                  <li><i class="fi-marker"></i></li>
+                  <li>
+                    <button class="button">Chicagoland & Northern IL</button>
+                  </li>
+                </ul>
+              </li>
+              <!-- Account information-->
+              <li>
+                <ul class="menu">
+                  <li><i class="fi-torso"></i></li>
+                  <li>
+                    <button class="button">My Account</button>
+                  </li>
+                </ul>
+              </li>
+              <!-- Shopping cart-->
+              <li>
+                <ul class="menu">
+                  <li><i class="fi-shopping-cart"></i></li>
+                  <li>
+                    <button class="button">3 Item(s) - $578.14</button>
+                  </li>
+                </ul>
+              </li>
+              <!-- Home-->
+              <li>
+                <ul class="menu">
+                  <li><i class="fi-info"></i></li>
+                  <li>
+                    <button class="button">Home</button>
+                  </li>
+                </ul>
+              </li>
+              <!-- Tickets-->
+              <li>
+                <ul class="menu">
+                  <li><i class="fi-ticket"></i></li>
+                  <li>
+                    <button class="button">Tickets</button>
+                  </li>
+                </ul>
+              </li>
+              <!-- Events-->
+              <li>
+                <ul class="menu">
+                  <li><i class="fi-clipboard-notes"></i></li>
+                  <li>
+                    <button class="button">Events</button>
+                  </li>
+                </ul>
+              </li>
+              <!-- Contact us-->
+              <li>
+                <ul class="menu">
+                  <li><i class="fi-telephone"></i></li>
+                  <li>
+                    <button class="button">Contact Us</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Logo, Search, Shopping Cart-->
+    <div class="full-searchbox-row">
+      <div class="row searchbox">
+        <!-- Logo-->
+        <div class="column large-2 show-for-large">
+          <h1 class="logo">Ticket</h1>
+        </div>
+        <!-- Search Input-->
+        <div class="column large-7 medium-9 search-input">
+          <!-- Category select-->
+          <div class="column large-4 medium-4 small-12">
+            <select>
+              <option value="default-text">All Categories</option>
+              <option value="1">Option1</option>
+              <option value="2">Option2</option>
+            </select>
+          </div>
+          <!-- Search form-->
+          <div class="column large-8 medium-8 small-12">
+            <input type="text" placeholder="Enter Artist, Team, or Venue">
+            <button class="icon"><i class="fi-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <!-- Shopping Cart-->
+        <div class="column large-3 medium-3 show-for-medium shopping-cart">
+          <div class="column large-2 medium-4">
+            <!-- Shopping Cart ICON-->
+            <div class="cart"><img src="images/icon-shopping-cart.png" alt="Shopping Cart"></div>
+          </div>
+          <!-- Shopping cart information-->
+          <div class="column large-10 medium-8 shopping-text">
+            <h4>Shopping Cart</h4>
+            <p>3 Item (s) - $578.14</p>
+            <div class="shopping-info">
+              <ul class="menu vertical">
+                <li><img src="http://placehold.it/54x54" alt="Item">
+                  <h6 class="item-name">The Game Ticket</h6><span class="item-quantity">1</span><span class="fi-x"></span><span class="price-currency">$</span><span class="item-price">54</span><span class="fi-x close"></span>
+                </li>
+                <li><img src="http://placehold.it/54x54" alt="Item">
+                  <h6 class="item-name">Dillon Francis</h6><span class="item-quantity">1</span><span class="fi-x"></span><span class="price-currency">$</span><span class="item-price">54</span><span class="fi-x close"></span>
+                </li>
+                <li><img src="http://placehold.it/54x54" alt="Item">
+                  <h6 class="item-name">Miami vs Cleavlend</h6><span class="item-quantity">1</span><span class="fi-x"></span><span class="price-currency">$</span><span class="item-price">54</span><span class="fi-x close"></span>
+                </li>
+                <li class="checkout"><span class="subtotal">Subtotal:</span><span class="price-currency">$</span><span class="item-price">578.14</span>
+                  <button class="tiny button">CHECKOUT</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation-->
+    <div class="full-navigation-row">
+      <div class="row navigation-row">
+        <div class="column medium-12 show-for-medium navigation">
+          <ul data-dropdown-menu class="dropdown menu float-right">
+            <li class="show-for-large"><a href="" class="fi-list"><strong>Categories</strong></a></li>
+            <li><a href="">Home</a></li>
+            <li class="has-submenu"><a href="">Tickets</a>
+              <ul data-submenu class="navigation-ul submenu menu vertical">
+                <li class="submenu-menu"><a href="">Item 1A</a></li>
+                <li class="submenu-menu"><a href="">Item 1A</a></li>
+                <li class="submenu-menu"><a href="">Item 1A</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu"><a href="">Events</a>
+              <ul data-submenu class="navigation-ul submenu menu vertical">
+                <li class="submenu-menu"><a href="">Item 1A</a></li>
+                <li class="submenu-menu"><a href="">Item 1A</a></li>
+                <li class="submenu-menu"><a href="">Item 1A</a></li>
+              </ul>
+            </li>
+            <li><a href="">Special Offers</a></li>
+            <li><a href="" class="contact-us">Contact Us</a></li>
+            <li class="show-for-large"><a href="" class="i-arrow-right">Arrow Right</a></li>
+            <li class="show-for-large"><a href="" class="i-social-facebook">Facebook</a></li>
+            <li class="show-for-large"><a href="" class="i-social-twitter">Twitter</a></li>
+            <li class="show-for-large"><a href="" class="i-social-googleplus">GooglePlus</a></li>
+            <li class="show-for-large"><a href="" class="i-social-linkedin">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row left-categories show-for-large">
+      <div class="column large-12 show-for-large main-pictures">
+        <ul class="menu">
+          <li>
+            <ul class="menu vertical">
+                  <li>
+                    <ul class="menu left-cat-menu">
+                      <li class="first">
+                        <div class="square"><img src="images/icon-music.png" alt=""></div>
+                      </li>
+                      <li class="second"><a href="">Music</a></li>
+                      <li class="third">
+                        <div class="right-square"><img src="images/icon-small-right-arrow.png" alt="Right Arrow"></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="menu left-cat-menu">
+                      <li class="first">
+                        <div class="square"><img src="images/icon-movies.png" alt=""></div>
+                      </li>
+                      <li class="second"><a href="">Movies</a></li>
+                      <li class="third">
+                        <div class="right-square"><img src="images/icon-small-right-arrow.png" alt="Right Arrow"></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="menu left-cat-menu">
+                      <li class="first">
+                        <div class="square"><img src="images/icon-sport.png" alt=""></div>
+                      </li>
+                      <li class="second"><a href="">Sport</a></li>
+                      <li class="third">
+                        <div class="right-square"><img src="images/icon-small-right-arrow.png" alt="Right Arrow"></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="menu left-cat-menu">
+                      <li class="first">
+                        <div class="square"><img src="images/icon-comedy.png" alt=""></div>
+                      </li>
+                      <li class="second"><a href="">Comedy</a></li>
+                      <li class="third">
+                        <div class="right-square"><img src="images/icon-small-right-arrow.png" alt="Right Arrow"></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="menu left-cat-menu">
+                      <li class="first">
+                        <div class="square"><img src="images/icon-family.png" alt=""></div>
+                      </li>
+                      <li class="second"><a href="">Family</a></li>
+                      <li class="third">
+                        <div class="right-square"><img src="images/icon-small-right-arrow.png" alt="Right Arrow"></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="menu left-cat-menu">
+                      <li class="first">
+                        <div class="square"><img src="images/icon-arts.png" alt=""></div>
+                      </li>
+                      <li class="second"><a href="">Arts</a></li>
+                      <li class="third">
+                        <div class="right-square"><img src="images/icon-small-right-arrow.png" alt="Right Arrow"></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="menu left-cat-menu">
+                      <li class="first">
+                        <div class="square"><img src="images/icon-theatre.png" alt=""></div>
+                      </li>
+                      <li class="second"><a href="">Theatre</a></li>
+                      <li class="third">
+                        <div class="right-square"><img src="images/icon-small-right-arrow.png" alt="Right Arrow"></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="menu left-cat-menu">
+                      <li class="first">
+                        <div class="square"><img src="images/icon-fashion.png" alt=""></div>
+                      </li>
+                      <li class="second"><a href="">Fashion</a></li>
+                      <li class="third">
+                        <div class="right-square"><img src="images/icon-small-right-arrow.png" alt="Right Arrow"></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="menu left-cat-menu">
+                      <li class="first">
+                        <div class="square"><img src="images/icon-food.png" alt=""></div>
+                      </li>
+                      <li class="second"><a href="">Food</a></li>
+                      <li class="third">
+                        <div class="right-square"><img src="images/icon-small-right-arrow.png" alt="Right Arrow"></div>
+                      </li>
+                    </ul>
+                  </li>
+            </ul>
+          </li>
+          <li class="main-image"><img src="images/slider-1.jpg" alt="Dillon Francis">
+            <!-- Image information, going on the image-->
+            <div class="image-text-main">
+              <h2>Dillon Francis</h2>
+              <h4>UNITED CENTER, CHICAGO, IL</h4>
+              <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i><a href="">(53)</a></div>
+              <p class="image-a"><a href=""><br>Get It Now!</a></p>
+            </div>
+          </li>
+          <li>
+            <ul class="menu vertical">
+              <li class="main-image-2"><img src="images/slider-2.jpg" alt="The Game">
+                <!-- Image information, going on the image-->
+                <div class="image-text-main-2">
+                  <h3>The Game  Tour</h3>
+                  <h4>December 2015</h4>
+                  <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i><a href="">(53)</a></div>
+                  <p class="image-a"><a href=""><br>Get It Now!</a></p>
+                </div>
+              </li>
+              <li class="main-image-3"><img src="images/slider-3.jpg" alt="Miami vs Cleavlend CL">
+                <!-- Image information, going on the image-->
+                <div class="image-text-main-3">
+                  <h3>Miami vs Cleavlend CL</h3>
+                  <h4>Medison Square</h4>
+                  <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i><a href="">(53)</a></div>
+                  <p class="image-a"><a href=""><br>Get It Now!</a></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- SHOP FOR EVENTS-->
+    <div class="row shop-row">
+      <!-- Header text-->
+      <div class="column small-12">
+        <ul class="menu">
+          <li><strong>Shop for Events</strong></li>
+          <li><a class="vertical-line">Line</a></li>
+          <li>
+            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</p>
+          </li>
+        </ul>
+        <!-- Progress Bar-->
+        <div role="progressbar" tabindex="0" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" class="progress">
+          <div style="width: 10%" class="progress-meter"></div>
+        </div>
+      </div>
+      <div class="row small-up-1 medium-up-3 large-up-5 inputs">
+        <!-- Select's START-->
+        <div class="column">
+          <label class="arrow-down-select">Select Category <br />
+            <select>
+              <option>Select</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+            </select>
+          </label>
+        </div>
+        <div class="column">
+          <label class="arrow-down-select">Sub Category <br />
+            <select>
+              <option>Select</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+            </select>
+          </label>
+        </div>
+        <div class="column">
+          <label class="calendar-select">From <br />
+            <input id="calendar" type="text" value="">
+          </label>
+        </div>
+        <div class="column">
+          <label class="calendar-select">To <br />
+            <input id="calendar2" type="text">
+          </label>
+        </div>
+        <div class="column">
+          <label class="town-select">Town <br />
+            <select>
+              <option>Chicagoland & Northern IL</option>
+              <option>Chicagoland & Northern IL</option>
+              <option>Chicagoland & Northern IL</option>
+            </select>
+          </label>
+        </div>
+        <!-- Select's END-->
+        
+      </div>
+    </div>
+    <!-- HOT TICKETS-->
+    <div class="row menu-navi">
+      <!-- Navigation-->
+          <!-- Navigation before events-->
+          <div class="column large-12 medium-12 show-for-medium menu-navigation">
+            <!-- Left side text-->
+            <ul class="menu float-left">
+              <li><strong>HOT TICKETS</strong></li>
+            </ul>
+            <!-- Right side text-->
+            <ul class="menu float-right">
+              <li>Family</li>
+              <li>Sport</li>
+              <li>Music</li>
+              <li>Art</li>
+              <li>Food</li>
+            </ul>
+          </div>
+    </div>
+    <!-- Tickets-->
+    <div class="row hot-tickets">
+          <!-- Hot ticket event FULL IMAGE-->
+          <div class="column large-3 medium-6 small-12">
+            <!-- Image-->
+            <div class="ticket-full-image-box"><img src="images/tickets-1.jpg" alt="Omar Linx"></div>
+          </div>
+          <!-- Hot ticket event with small text in description-->
+          <div class="column large-3 medium-6 small-12">
+            <!-- Image, text, button-->
+            <div class="ticket-box"><img src="images/tickets-2.jpg" alt="Dirty South">
+              <h5>Presented by Blueprint</h5>
+              <p>DIRTY SOUTH : #STEREO<small class="text-new">NEW!</small></p><a href="" class="tiny button ticket-button">SEE TICKET</a>
+            </div>
+          </div>
+          <!-- Hot ticket event with small text in description-->
+          <div class="column large-3 medium-6 small-12">
+            <!-- Image, text, button-->
+            <div class="ticket-box"><img src="images/tickets-3.jpg" alt="PROBLEM">
+              <h5>Presented by BlueprintLIVE</h5>
+              <p>Problem<small class="text-hot">HOT!</small></p><a href="" class="tiny button ticket-button">SEE TICKET</a>
+            </div>
+          </div>
+          <!-- Hot ticket event vanila, without small text.-->
+          <div class="column large-3 medium-6 small-12">
+            <!-- Image, text, button-->
+            <div class="ticket-box"><img src="images/tickets-4.jpg" alt="GRIZ">
+              <h5>Presented by Blueprint &amp; Live Nation</h5>
+              <p>GRIZ :: SAY IT LOUD TOUR</p><a href="" class="tiny button ticket-button">SEE TICKET</a>
+            </div>
+          </div>
+    </div>
+    <!-- Sports menu row-->
+    <div class="row menu-navi">
+      <!-- Navigation-->
+          <!-- Navigation before events-->
+          <div class="column large-12 medium-12 show-for-medium menu-navigation">
+            <!-- Left side text-->
+            <ul class="menu float-left">
+              <li><strong>SPORTS</strong></li>
+            </ul>
+            <!-- Right side text-->
+            <ul class="menu float-right">
+              <li>All</li>
+              <li>Basketball</li>
+              <li>Tennis</li>
+              <li>Rugby</li>
+              <li>Formula 1</li>
+            </ul>
+          </div>
+    </div>
+    <!-- SPORTS ROW-->
+    <div class="row sports-row">
+      <!-- Close Button-->
+      <div class="column small-12 large-7 sports-labels">
+        <div data-closable class="primary callout event-label-button">
+          <p>Recommendet Sport Evenets past 5 Days</p>
+          <button aria-label="Dismiss alert" type="button" data-close class="close-button"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <!-- Events START-->
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label">
+              <!-- Calendar icon and date-->
+              <div class="column small-2 calendar">
+                <ul class="menu">
+                  <li><img src="images/icon-calendar.png" alt="Date"></li>
+                  <li class="date"><strong>14<br>April</strong></li>
+                </ul>
+              </div>
+              <!-- Description-->
+              <div class="column small-8 description">
+                <h6><strong>Neil Diamond World Tour 2015</strong></h6>
+                <p>United Center</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-2 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label">
+              <!-- Calendar icon and date-->
+              <div class="column small-2 calendar">
+                <ul class="menu">
+                  <li><img src="images/icon-calendar.png" alt="Date"></li>
+                  <li class="date"><strong>21<br>April</strong></li>
+                </ul>
+              </div>
+              <!-- Description-->
+              <div class="column small-8 description">
+                <h6><strong>Chicago White Sox vs. Cleveland Indians</strong></h6>
+                <p>U.S. Cellular Field</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-2 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label">
+              <!-- Calendar icon and date-->
+              <div class="column small-2 calendar">
+                <ul class="menu">
+                  <li><img src="images/icon-calendar.png" alt="Date"></li>
+                  <li class="date"><strong>26<br>April</strong></li>
+                </ul>
+              </div>
+              <!-- Description-->
+              <div class="column small-8 description">
+                <h6><strong>Chicago Bulls v. TBD - Round 1 Home Game D</strong></h6>
+                <p>United Center</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-2 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label">
+              <!-- Calendar icon and date-->
+              <div class="column small-2 calendar">
+                <ul class="menu">
+                  <li><img src="images/icon-calendar.png" alt="Date"></li>
+                  <li class="date"><strong>27<br>April</strong></li>
+                </ul>
+              </div>
+              <!-- Description-->
+              <div class="column small-8 description">
+                <h6><strong>Bank of America Theatre</strong></h6>
+                <p>U.S. Cellular Field</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-2 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label">
+              <!-- Calendar icon and date-->
+              <div class="column small-2 calendar">
+                <ul class="menu">
+                  <li><img src="images/icon-calendar.png" alt="Date"></li>
+                  <li class="date"><strong>29<br>April</strong></li>
+                </ul>
+              </div>
+              <!-- Description-->
+              <div class="column small-8 description">
+                <h6><strong>Shania Twain Rock This Country Tour</strong></h6>
+                <p>Allstate Arena</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-2 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label">
+              <!-- Calendar icon and date-->
+              <div class="column small-2 calendar">
+                <ul class="menu">
+                  <li><img src="images/icon-calendar.png" alt="Date"></li>
+                  <li class="date"><strong>30<br>April</strong></li>
+                </ul>
+              </div>
+              <!-- Description-->
+              <div class="column small-8 description">
+                <h6><strong>One Direction: On The Road Again Tour 2015</strong></h6>
+                <p>Soldier Field</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-2 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+        <!-- Events END-->
+        
+        <!-- Events for small screen START-->
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label-small-screen show-for-small-only">
+              <!-- Description-->
+              <div class="column small-12 description">
+                <h6><strong>Neil Diamond World Tour 2015</strong></h6>
+                <p>United Center</p>
+              </div>
+              <!-- Calendar icon and date-->
+              <div class="column small-6 calendar">
+                <p>14 April</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-6 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label-small-screen show-for-small-only">
+              <!-- Description-->
+              <div class="column small-12 description">
+                <h6><strong>Chicago White Sox vs. Cleveland Indians</strong></h6>
+                <p>U.S. Cellular Field</p>
+              </div>
+              <!-- Calendar icon and date-->
+              <div class="column small-6 calendar">
+                <p>21 April</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-6 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label-small-screen show-for-small-only">
+              <!-- Description-->
+              <div class="column small-12 description">
+                <h6><strong>Chicago Bulls v. TBD - Round 1 Home Game D</strong></h6>
+                <p>United Center</p>
+              </div>
+              <!-- Calendar icon and date-->
+              <div class="column small-6 calendar">
+                <p>26 April</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-6 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label-small-screen show-for-small-only">
+              <!-- Description-->
+              <div class="column small-12 description">
+                <h6><strong>Bank of America Theatre</strong></h6>
+                <p>U.S. Cellular Field</p>
+              </div>
+              <!-- Calendar icon and date-->
+              <div class="column small-6 calendar">
+                <p>27 April</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-6 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label-small-screen show-for-small-only">
+              <!-- Description-->
+              <div class="column small-12 description">
+                <h6><strong>Shania Twain Rock This Country Tour</strong></h6>
+                <p>Allstate Arena</p>
+              </div>
+              <!-- Calendar icon and date-->
+              <div class="column small-6 calendar">
+                <p>29 April</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-6 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label-small-screen show-for-small-only">
+              <!-- Description-->
+              <div class="column small-12 description">
+                <h6><strong>One Direction: On The Road Again Tour 2015</strong></h6>
+                <p>Soldier Field</p>
+              </div>
+              <!-- Calendar icon and date-->
+              <div class="column small-6 calendar">
+                <p>30 April</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-6 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+        <!-- Events for small screen END-->
+        
+      </div>
+      <!-- Right Side Images-->
+      <div class="column medium-12 large-5 sports-images show-for-medium event-images">
+        <div class="image-with-text"><img src="images/tickets-5.jpg" alt="Rugby">
+              <!-- Image information, going on the image-->
+              <div class="image-text-left">
+                <h3>L.A Lakers vs <br>Chicago Bulls!</h3>
+                <h4>BMO Harris Bank Conter</h4>
+                <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i><a href="">(53)</a></div>
+                <p class="image-a"><a href=""><br>Get It Now!</a></p>
+              </div>
+        </div>
+        <div class="image-with-text"><img src="images/tickets-6.jpg" alt="Messi">
+              <!-- Image information, going on the image-->
+              <div class="image-text-right">
+                <h3>Barcelona vs <br>Real Madrid Tickets</h3>
+                <h4>Kamp Nou</h4>
+                <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i><a href="">(53)</a></div>
+                <p class="image-a"><a href=""><br>Get It Now!</a></p>
+              </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sports Events with Pictures-->
+    <div class="row small-up-1 medium-up-3 large-up-5 sport-events-row">
+          <!-- Sport event tab-->
+          <div class="column sports">
+            <!-- Image, text and button-->
+            <div class="sport-event"><img src="images/sports-1.jpg" alt="Lakers">
+              <h6>BMO Harris Bank Center</h6>
+              <p>L.A LAKERS VS HEAT</p><a href="" class="tiny button sport-button">SEE TICKET</a>
+            </div>
+          </div>
+          <!-- Sport event tab-->
+          <div class="column sports">
+            <!-- Image, text and button-->
+            <div class="sport-event"><img src="images/sports-2.jpg" alt="Football">
+              <h6>Lisabon, Portugal</h6>
+              <p>Portugal vs Serbia EUR16</p><a href="" class="tiny button sport-button">SEE TICKET</a>
+            </div>
+          </div>
+          <!-- Sport event tab-->
+          <div class="column sports">
+            <!-- Image, text and button-->
+            <div class="sport-event"><img src="images/sports-3.jpg" alt="UEFA Finals">
+              <h6>Peoria Civic Center</h6>
+              <p>UEFA Finals<small class="text-hot">HOT!</small></p><a href="" class="tiny button sport-button">SEE TICKET</a>
+            </div>
+          </div>
+          <!-- Sport event tab-->
+          <div class="column sports">
+            <!-- Image, text and button-->
+            <div class="sport-event"><img src="images/sports-4.jpg" alt="Ski Jumping">
+              <h6>U.S. Cellular Field</h6>
+              <p>2015 Ski Jumping<small class="text-new">NEW!</small></p><a href="" class="tiny button sport-button">SEE TICKET</a>
+            </div>
+          </div>
+          <!-- Sport event tab-->
+          <div class="column sports">
+            <!-- Image, text and button-->
+            <div class="sport-event"><img src="images/sports-5.jpg" alt="Rugby Finals">
+              <h6>BMO Harris Bank Center</h6>
+              <p>Rugby Finals 2016</p><a href="" class="tiny button sport-button">SEE TICKET</a>
+            </div>
+          </div>
+    </div>
+    <!-- RECOMMENDED FOR YOU-->
+    <div class="row menu-navi">
+      <!-- Navigation-->
+      <div class="column small-12 menu-navigation-one">
+        <!-- Left Side Text-->
+        <ul class="menu float-left">
+          <li><strong>RECOMMENDED FOR YOU</strong></li>
+        </ul>
+        <!-- Right Side Menu-->
+        <ul class="menu float-right">
+          <li>View All</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row recommended-row show-for-medium">
+      <!-- Events-->
+      <ul class="rec-ul">
+            <!-- Recommended event tab-->
+            <li>
+              <div class="column recommended-tab"><img src="images/banner-1.png" alt="Chicago Bulls" class="float-center">
+                <h6 class="text-center">Chicago Bulls</h6>
+                <!-- Star rating-->
+                <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
+              </div>
+            </li>
+            <!-- Recommended event tab-->
+            <li>
+              <div class="column recommended-tab"><img src="images/banner-2.png" alt="Chicago Backhawks" class="float-center">
+                <h6 class="text-center">Chicago Backhawks</h6>
+                <!-- Star rating-->
+                <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
+              </div>
+            </li>
+            <!-- Recommended event tab-->
+            <li>
+              <div class="column recommended-tab"><img src="images/banner-3.png" alt="Chicago Wolves" class="float-center">
+                <h6 class="text-center">Chicago Wolves</h6>
+                <!-- Star rating-->
+                <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
+              </div>
+            </li>
+            <!-- Recommended event tab-->
+            <li>
+              <div class="column recommended-tab"><img src="images/banner-4.png" alt="CONCACAF Gold Cup" class="float-center">
+                <h6 class="text-center">CONCACAF Gold Cup</h6>
+                <!-- Star rating-->
+                <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
+              </div>
+            </li>
+            <!-- Recommended event tab-->
+            <li>
+              <div class="column recommended-tab"><img src="images/banner-1.png" alt="Chicago Bulls" class="float-center">
+                <h6 class="text-center">Chicago Bulls</h6>
+                <!-- Star rating-->
+                <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
+              </div>
+            </li>
+            <!-- Recommended event tab-->
+            <li>
+              <div class="column recommended-tab"><img src="images/banner-2.png" alt="Chicago Bulls" class="float-center">
+                <h6 class="text-center">Chicago Backhawks</h6>
+                <!-- Star rating-->
+                <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
+              </div>
+            </li>
+            <!-- Recommended event tab-->
+            <li>
+              <div class="column recommended-tab"><img src="images/banner-1.png" alt="Chicago Bulls" class="float-center">
+                <h6 class="text-center">Chicago Bulls</h6>
+                <!-- Star rating-->
+                <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
+              </div>
+            </li>
+            <!-- Recommended event tab-->
+            <li>
+              <div class="column recommended-tab"><img src="images/banner-2.png" alt="Chicago Backhawks" class="float-center">
+                <h6 class="text-center">Chicago Backhawks</h6>
+                <!-- Star rating-->
+                <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
+              </div>
+            </li>
+            <!-- Recommended event tab-->
+            <li>
+              <div class="column recommended-tab"><img src="images/banner-3.png" alt="Chicago Wolves" class="float-center">
+                <h6 class="text-center">Chicago Wolves</h6>
+                <!-- Star rating-->
+                <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i></div>
+              </div>
+            </li>
+      </ul>
+    </div>
+    <!-- Music navigation menu-->
+    <div class="row menu-navi">
+      <!-- Navigation-->
+          <!-- Navigation before events-->
+          <div class="column large-12 medium-12 show-for-medium menu-navigation">
+            <!-- Left side text-->
+            <ul class="menu float-left">
+              <li><strong>MUSIC</strong></li>
+            </ul>
+            <!-- Right side text-->
+            <ul class="menu float-right">
+              <li>Live</li>
+              <li>Rock</li>
+              <li>Transe</li>
+              <li>Techno</li>
+              <li>National</li>
+            </ul>
+          </div>
+    </div>
+    <!-- Music events-->
+    <div class="row music-events-row">
+      <!-- Events-->
+          <!-- Hot ticket event with small text in description-->
+          <div class="column large-3 medium-6 small-12">
+            <!-- Image, text, button-->
+            <div class="ticket-box"><img src="images/music-1.jpg" alt="Black Milk">
+              <h5>Presented by Blueprint</h5>
+              <p>Black Milk<small class="text-new">NEW!</small></p><a href="" class="tiny button ticket-button">SEE TICKET</a>
+            </div>
+          </div>
+          <!-- Hot ticket event with small text in description-->
+          <div class="column large-3 medium-6 small-12">
+            <!-- Image, text, button-->
+            <div class="ticket-box"><img src="images/music-2.jpg" alt="Ten Walls">
+              <h5>Presented by Fortune Sound</h5>
+              <p>Ten Walls (Live)<small class="text-hot">HOT!</small></p><a href="" class="tiny button ticket-button">SEE TICKET</a>
+            </div>
+          </div>
+          <!-- Hot ticket event vanila, without small text.-->
+          <div class="column large-3 medium-6 small-12">
+            <!-- Image, text, button-->
+            <div class="ticket-box"><img src="images/music-3.jpg" alt="Monstercat">
+              <h5>Presented by Seasons, Monstercat</h5>
+              <p>MONSTERCAT SHOWCASE</p><a href="" class="tiny button ticket-button">SEE TICKET</a>
+            </div>
+          </div>
+          <!-- Hot ticket event FULL IMAGE-->
+          <div class="column large-3 medium-6 small-12">
+            <!-- Image-->
+            <div class="ticket-full-image-box"><img src="images/music-4.jpg" alt="Firebeatz"></div>
+          </div>
+    </div>
+    <div class="row music-events-labels-row">
+      <!-- Left Side Images-->
+      <div class="column medium-12 large-5 sports-images-bottom show-for-medium event-images">
+        <div class="image-with-text"><img src="images/music-5.jpg" alt="Hardwell">
+              <!-- Image information, going on the image-->
+              <div class="image-text-left">
+                <h3>Hardwell TOP 10 DJ<br>Tour 2015</h3>
+                <h4>BMO Harris Bank Center</h4>
+                <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i><a href="">(53)</a></div>
+                <p class="image-a"><a href=""><br>Get It Now!</a></p>
+              </div>
+        </div>
+        <div class="image-with-text"><img src="images/music-6.jpg" alt="Feddle Le Grand Tour">
+              <!-- Image information, going on the image-->
+              <div class="image-text-right">
+                <h3>Feddle Le Grand <br>Tour Vegas</h3>
+                <h4>Belagio</h4>
+                <div class="rating"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star inactive"></i><a href="">(53)</a></div>
+                <p class="image-a"><a href=""><br>Get It Now!</a></p>
+              </div>
+        </div>
+      </div>
+      <!-- Close Button-->
+      <div class="column small-12 large-7 sports-labels-bottom">
+        <div data-closable class="primary callout event-label-button">
+          <p>Recommendet Sport Evenets past 5 Days</p>
+          <button aria-label="Dismiss alert" type="button" data-close class="close-button"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <!-- Events START-->
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label">
+              <!-- Calendar icon and date-->
+              <div class="column small-2 calendar">
+                <ul class="menu">
+                  <li><img src="images/icon-calendar.png" alt="Date"></li>
+                  <li class="date"><strong>14<br>April</strong></li>
+                </ul>
+              </div>
+              <!-- Description-->
+              <div class="column small-8 description">
+                <h6><strong>Neil Diamond World Tour 2015</strong></h6>
+                <p>United Center</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-2 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label">
+              <!-- Calendar icon and date-->
+              <div class="column small-2 calendar">
+                <ul class="menu">
+                  <li><img src="images/icon-calendar.png" alt="Date"></li>
+                  <li class="date"><strong>21<br>April</strong></li>
+                </ul>
+              </div>
+              <!-- Description-->
+              <div class="column small-8 description">
+                <h6><strong>Chicago White Sox vs. Cleveland Indians</strong></h6>
+                <p>U.S. Cellular Field</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-2 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label">
+              <!-- Calendar icon and date-->
+              <div class="column small-2 calendar">
+                <ul class="menu">
+                  <li><img src="images/icon-calendar.png" alt="Date"></li>
+                  <li class="date"><strong>26<br>April</strong></li>
+                </ul>
+              </div>
+              <!-- Description-->
+              <div class="column small-8 description">
+                <h6><strong>Chicago Bulls v. TBD - Round 1 Home Game D</strong></h6>
+                <p>United Center</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-2 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label">
+              <!-- Calendar icon and date-->
+              <div class="column small-2 calendar">
+                <ul class="menu">
+                  <li><img src="images/icon-calendar.png" alt="Date"></li>
+                  <li class="date"><strong>27<br>April</strong></li>
+                </ul>
+              </div>
+              <!-- Description-->
+              <div class="column small-8 description">
+                <h6><strong>Bank of America Theatre</strong></h6>
+                <p>U.S. Cellular Field</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-2 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label">
+              <!-- Calendar icon and date-->
+              <div class="column small-2 calendar">
+                <ul class="menu">
+                  <li><img src="images/icon-calendar.png" alt="Date"></li>
+                  <li class="date"><strong>29<br>April</strong></li>
+                </ul>
+              </div>
+              <!-- Description-->
+              <div class="column small-8 description">
+                <h6><strong>Shania Twain Rock This Country Tour</strong></h6>
+                <p>Allstate Arena</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-2 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label">
+              <!-- Calendar icon and date-->
+              <div class="column small-2 calendar">
+                <ul class="menu">
+                  <li><img src="images/icon-calendar.png" alt="Date"></li>
+                  <li class="date"><strong>30<br>April</strong></li>
+                </ul>
+              </div>
+              <!-- Description-->
+              <div class="column small-8 description">
+                <h6><strong>One Direction: On The Road Again Tour 2015</strong></h6>
+                <p>Soldier Field</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-2 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+        <!-- Events END-->
+        
+        <!-- Events for small screen START-->
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label-small-screen show-for-small-only">
+              <!-- Description-->
+              <div class="column small-12 description">
+                <h6><strong>Neil Diamond World Tour 2015</strong></h6>
+                <p>United Center</p>
+              </div>
+              <!-- Calendar icon and date-->
+              <div class="column small-6 calendar">
+                <p>14 April</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-6 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label-small-screen show-for-small-only">
+              <!-- Description-->
+              <div class="column small-12 description">
+                <h6><strong>Chicago White Sox vs. Cleveland Indians</strong></h6>
+                <p>U.S. Cellular Field</p>
+              </div>
+              <!-- Calendar icon and date-->
+              <div class="column small-6 calendar">
+                <p>21 April</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-6 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label-small-screen show-for-small-only">
+              <!-- Description-->
+              <div class="column small-12 description">
+                <h6><strong>Chicago Bulls v. TBD - Round 1 Home Game D</strong></h6>
+                <p>United Center</p>
+              </div>
+              <!-- Calendar icon and date-->
+              <div class="column small-6 calendar">
+                <p>26 April</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-6 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label-small-screen show-for-small-only">
+              <!-- Description-->
+              <div class="column small-12 description">
+                <h6><strong>Bank of America Theatre</strong></h6>
+                <p>U.S. Cellular Field</p>
+              </div>
+              <!-- Calendar icon and date-->
+              <div class="column small-6 calendar">
+                <p>27 April</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-6 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label-small-screen show-for-small-only">
+              <!-- Description-->
+              <div class="column small-12 description">
+                <h6><strong>Shania Twain Rock This Country Tour</strong></h6>
+                <p>Allstate Arena</p>
+              </div>
+              <!-- Calendar icon and date-->
+              <div class="column small-6 calendar">
+                <p>29 April</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-6 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+            <!-- Sports event label-->
+            <div class="event column small-12 event-label-small-screen show-for-small-only">
+              <!-- Description-->
+              <div class="column small-12 description">
+                <h6><strong>One Direction: On The Road Again Tour 2015</strong></h6>
+                <p>Soldier Field</p>
+              </div>
+              <!-- Calendar icon and date-->
+              <div class="column small-6 calendar">
+                <p>30 April</p>
+              </div>
+              <!-- Button-->
+              <div class="column small-6 tab-button"><a href="" class="tiny button event-button">SEE TICKET</a></div>
+            </div>
+        <!-- Events for small screen END-->
+        
+      </div>
+    </div>
+    <!-- Social Media-->
+    <div class="full-row">
+      <div class="bottom-background"></div>
+      <div class="row social-media-row">
+            <!-- Social media tab-->
+            <div class="column large-3 medium-6 small-12 social-media-tab">
+              <div class="social-media"><img src="images/facebook.png" alt="Facebook">
+                <h6 class="social-facebook">Facebook</h6>
+                <h5>Follow us on facebook</h5>
+                <p>You would have to be half mad to dream me up</p><a href="" class="tiny button social-media-button">Like Us</a>
+              </div>
+            </div>
+            <!-- Social media tab-->
+            <div class="column large-3 medium-6 small-12 social-media-tab">
+              <div class="social-media"><img src="images/twitter.png" alt="Twitter">
+                <h6 class="social-twitter">Twitter</h6>
+                <h5>Follow us on twitter</h5>
+                <p>You would have to be half mad to dream me up</p><a href="" class="tiny button social-media-button">Tweet Now</a>
+              </div>
+            </div>
+            <!-- Social media tab-->
+            <div class="column large-3 medium-6 small-12 social-media-tab">
+              <div class="social-media"><img src="images/googleplus.png" alt="Google Plus">
+                <h6 class="social-googleplus">GOOGLE +</h6>
+                <h5>Follow us on google plus</h5>
+                <p>You would have to be half mad to dream me up</p><a href="" class="tiny button social-media-button">Follow Us</a>
+              </div>
+            </div>
+            <!-- Social media tab-->
+            <div class="column large-3 medium-6 small-12 social-media-tab">
+              <div class="social-media"><img src="images/instagram.png" alt="Instagram">
+                <h6 class="social-instagram">Instragram</h6>
+                <h5>Follow us on instagram</h5>
+                <p>You would have to be half mad to dream me up</p><a href="" class="tiny button social-media-button">Follow Us</a>
+              </div>
+            </div>
+      </div>
+      <!-- More Information under social-media-->
+      <div class="row information-tabs-row">
+            <!-- Information tab (underneath the social media row)-->
+            <div class="column large-3 medium-6 show-for-medium information-tab">
+              <ul class="menu">
+                <!-- Left side image.-->
+                <li>
+                  <div class="ticket"><img src="images/icon-ticket.png" alt="Ticket"></div>
+                </li>
+                <!-- Right side text-->
+                <li>
+                  <h5>+15.000 Tickets</h5>
+                  <p>Sports, Movies, etc.</p>
+                </li>
+              </ul>
+            </div>
+            <!-- Information tab (underneath the social media row)-->
+            <div class="column large-3 medium-6 show-for-medium information-tab">
+              <ul class="menu">
+                <!-- Left side image.-->
+                <li>
+                  <div class="star"><img src="images/icon-star.png" alt="Star"></div>
+                </li>
+                <!-- Right side text-->
+                <li>
+                  <h5>More then 20 Categories</h5>
+                  <p>Football, Rugby, Tennis</p>
+                </li>
+              </ul>
+            </div>
+            <!-- Information tab (underneath the social media row)-->
+            <div class="column large-3 medium-6 show-for-medium information-tab">
+              <ul class="menu">
+                <!-- Left side image.-->
+                <li>
+                  <div class="shipping"><img src="images/icon-shipping.png" alt="Shipping"></div>
+                </li>
+                <!-- Right side text-->
+                <li>
+                  <h5>Free Shipping</h5>
+                  <p>Free shipping on the world</p>
+                </li>
+              </ul>
+            </div>
+            <!-- Information tab (underneath the social media row)-->
+            <div class="column large-3 medium-6 show-for-medium information-tab">
+              <ul class="menu">
+                <!-- Left side image.-->
+                <li>
+                  <div class="refund"><img src="images/icon-pig.png" alt="Refund"></div>
+                </li>
+                <!-- Right side text-->
+                <li>
+                  <h5>Refund in 2 days</h5>
+                  <p>100% guarantee</p>
+                </li>
+              </ul>
+            </div>
+      </div>
+      <footer>
+        <div class="row">
+          <!-- Logo and Free shipping information-->
+          <div class="column large-2 medium-6 free-shipping"><img src="images/footer-logo.png" alt="Logo" class="footer-logo">
+            <h5>Ticket Services</h5>
+            <ul class="menu">
+              <li><img src="images/icon-delivery.png" alt="Delivery"></li>
+              <li>
+                <h6>Free Shipping</h6>
+                <p>On All U.S. Orders</p>
+              </li>
+            </ul>
+          </div>
+          <!-- Subscribe information FOR MEDIUM SCREEN-->
+          <div class="column large-3 medium-6 subscribe show-for-medium-only">
+            <h6>Subscribe Today</h6>
+            <p>and <span>save a 10%</span> on your next order</p>
+            <div class="input-group">
+              <input type="text" placeholder="Enter E-Mail" class="input-group-field">
+              <div class="input-group-button"><img src="images/icon-rightarrow.png" alt="Submit"></div>
+            </div>
+            <p>I don't think... " then you<br>shouldn't talk, said the Hatter.</p>
+          </div>
+          <!-- Policies-->
+          <div class="column large-2 large-offset-1 medium-4 policies">
+            <ul class="menu vertical">
+              <li>
+                <h5>Policies</h5>
+              </li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Return Policy</a></li>
+              <li><a href="">Shipping Policy</a></li>
+            </ul>
+          </div>
+          <!-- Account information-->
+          <div class="column large-2 medium-4 account">
+            <ul class="menu vertical">
+              <li>
+                <h5>Account</h5>
+              </li>
+              <li><a href="">Login</a></li>
+              <li><a href="">Register</a></li>
+              <li><a href="">My Account</a></li>
+              <li><a href="">History</a></li>
+              <li><a href="">Wishlist</a></li>
+            </ul>
+          </div>
+          <!-- Website information and necessary buttons-->
+          <div class="column large-2 medium-4 website-info">
+            <ul class="menu vertical">
+              <li>
+                <h5>Website</h5>
+              </li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Tickets</a></li>
+              <li><a href="">Events</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Help</a></li>
+            </ul>
+          </div>
+          <!-- Subscribe information FOR LARGE SCREEN-->
+          <div class="column large-3 show-for-large subscribe">
+            <h6>Subscribe Today</h6>
+            <p>and <span>save a 10%</span> on your next order</p>
+            <div class="input-group">
+              <input type="text" placeholder="Enter E-Mail" class="input-group-field">
+              <div class="input-group-button"><img src="images/icon-rightarrow.png" alt="Submit"></div>
+            </div>
+            <p>I don't think... " then you<br>shouldn't talk, said the Hatter.</p>
+          </div>
+          <div class="column small-12">
+            <p class="footer-text">&copy; 2016 TICKET SERVICE. All rights reserved. CODE: PAULIUS KAŠIUBA, DESIGN: UNKNOWN</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JQUERY, JQUERY-EASING, FOUNDATION-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
+    <!-- DATE PICKER-->
+    <script src="https://cdn.rawgit.com/glad/glDatePicker/master/glDatePicker.min.js"></script>
+    <!-- SLY PLUGIN-->
+    <script type="text/javascript" src="https://cdn.rawgit.com/darsain/sly/master/dist/sly.min.js"></script>
+    <!-- MAIN JS FILE-->
+    <script src="https://cdn.rawgit.com/PauliusKK/ticket-events/master/js/main.min-dist.js"></script>
+  </body>
+</html>
